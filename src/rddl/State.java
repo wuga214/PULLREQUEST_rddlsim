@@ -763,7 +763,7 @@ public class State {
 			}
 			if(giveup==true){
 				continue;
-			}else{
+			}else if(value!=null){
 				if(value.toString().equals(var_src.get(key).toString())){
 					pob_assign.add(key);
 				}
@@ -771,6 +771,9 @@ public class State {
 					giveup=true;
 					continue;
 				}
+			}else{
+				giveup=true;
+				continue;
 			}
 		}
 		

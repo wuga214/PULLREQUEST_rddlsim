@@ -91,7 +91,7 @@ public class StochasticReservoirPolicy extends Policy {
 	}
 
 	private Object getReasonableValue(State s, TYPE_NAME _typeRange, ArrayList<LCONST> terms) {
-		// TODO Auto-generated method stub
+		s.getPVariableAssign(p, terms)
 		return null;
 	}
 
