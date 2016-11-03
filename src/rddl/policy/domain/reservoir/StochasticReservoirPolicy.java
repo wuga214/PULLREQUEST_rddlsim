@@ -1,6 +1,7 @@
 package rddl.policy.domain.reservoir;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import rddl.EvalException;
 import rddl.RDDL;
@@ -90,8 +91,24 @@ public class StochasticReservoirPolicy extends Policy {
 		return actions;
 	}
 
-	private Object getReasonableValue(State s, TYPE_NAME _typeRange, ArrayList<LCONST> terms) {
-		s.getPVariableAssign(p, terms)
+	private Object getReasonableValue(State s, TYPE_NAME _typeRange, ArrayList<LCONST> terms) throws EvalException {
+		HashMap<Integer, LCONST> knownterms=new HashMap<Integer, LCONST>();
+		knownterms.put(0, terms.get(0));
+		PVAR_NAME p = new PVAR_NAME("DOWNSTREAM");
+		ArrayList<ArrayList<LCONST>> possible_terms=null;
+		try {
+			possible_terms = s.getPossibleTerms(p, knownterms, null);
+		} catch (EvalException e) {
+			e.printStackTrace();
+		}
+		
+		if(possible_terms.isEmpty()){
+			throw new EvalException("No compariable terms for Pvaraible " + p+" and "+ terms +"");
+		}
+		
+		LCONST downsteam_id = possible_terms.get(0).get(1);
+		
+		
 		return null;
 	}
 
