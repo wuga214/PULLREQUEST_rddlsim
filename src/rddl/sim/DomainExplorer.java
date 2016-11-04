@@ -7,6 +7,7 @@ import java.util.SortedMap;
 import org.apache.commons.math3.random.RandomDataGenerator;
 
 import rddl.EvalException;
+import rddl.Help;
 import rddl.RDDL;
 import rddl.State;
 import rddl.RDDL.DOMAIN;
@@ -100,21 +101,11 @@ public class DomainExplorer {
 			// (these constraints can mention actions and current state / derived fluents)
 			_state.checkStateActionConstraints(action_list);
 			
-			// Set Action Assignments for the State without inference to next state
-			// We need a state-action pair
-			for (PVAR_NAME p : _state._actions.keySet())
-				_state._actions.get(p).clear();
-			_state.setPVariables(_state._actions, action_list);
+			// Compute next state (and all intermediate / observation variables)
+			_state.computeNextState(action_list, _rand);
 			
 			// Set visualization to print state-action pair
 			_v.stateAction();
-			_v.display(_state, t);
-			
-			// Compute next state (and all intermediate / observation variables)
-			_state.computeNextState(action_list, _rand);
-
-			// Set visualization to print only state info
-			_v.stateOnly();
 			_v.display(_state, t);
 
 			// Calculate reward / objective and store
@@ -126,6 +117,10 @@ public class DomainExplorer {
 			
 			// Done with this iteration, advance to next round
 			_state.advanceNextState(false /* do not clear observations */);
+			
+			// Set visualization to print only state info
+			_v.stateOnly();
+			_v.display(_state, t);
 			
 			// A "terminate-when" condition in the horizon specification may lead to early termination
 			if (_i._termCond != null && _state.checkTerminationCondition(_i._termCond))
@@ -179,7 +174,7 @@ public class DomainExplorer {
 		
 		// TODO Auto-generated method stub
 		if (ArgsParser.getOptionPos("R",args)==-1 ||ArgsParser.getOptionPos("P",args)==-1 || ArgsParser.getOptionPos("I",args)==-1 ) {
-			System.out.println("Please specify domain, policy and instance. \nMore information please run: \n>>>$./run rddl.help");
+			System.out.println(Help.getSimulatorParaDescription());
 			System.exit(1);
 		}
 		String rddl_file = ArgsParser.getOption("R", args);
@@ -204,7 +199,6 @@ public class DomainExplorer {
 		if (ArgsParser.getOptionPos("D",args)!=-1&&ArgsParser.getOptionPos("L",args)!=-1){
 			data_path=ArgsParser.getOption("D",args);
 			label_path=ArgsParser.getOption("L",args);
-			System.out.println(data_path);
 		}
 		
 		// Load RDDL files
