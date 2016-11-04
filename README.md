@@ -1,10 +1,10 @@
 ### Progress
 1. Data Extraction from RDDL is functional
 2. Domain Reservoir is function
+3. Policy for Reservoir(Done)
 
 ### TODO
-1. Policy for Reservoir
-2. Domain Description for Inventory control and power gen
+1. Domain Description for Inventory control and power gen
 
 ### New Helper Class
 ./run rddl.Help
@@ -16,10 +16,6 @@
 
 ### RUN
 Modified run to accept more than 13 parameters
-
-### Command Line Example:
-
-./run rddl.sim.DomainExplorer -R files/final_comp/rddl -P rddl.policy.RandomBoolPolicy -I elevators_inst_mdp__9 -V rddl.viz.ValueVectorDisplay -D nn/Data.txt -L nn/Label.txt
 
 RDDL Interface Improvement
 ===============================================
