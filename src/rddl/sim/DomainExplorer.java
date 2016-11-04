@@ -56,7 +56,8 @@ public class DomainExplorer {
 		_d = rddl._tmDomainNodes.get(_i._sDomain);
 		if (_n != null && !_i._sDomain.equals(_n._sDomain))
 			throw new Exception("\nERROR: Domain name of instance and fluents do not match: " + 
-					_i._sDomain + " vs. " + _n._sDomain);		
+					_i._sDomain + " vs. " + _n._sDomain);	
+		resetState();
 	}
 	
 	public void resetState() throws EvalException {
@@ -136,6 +137,10 @@ public class DomainExplorer {
 	public void Search(int rounds, String data_path, String label_path){
 		if(!data_path.equals("") && !label_path.equals(""))
 			_v.writeFile(data_path, label_path);
+			_v.stateAction();
+			_v.initFileWriting(_state);
+			_v.stateOnly();
+			_v.initFileWriting(_state);
 		for(int i=0;i<rounds;i++){
 			int rand_seed = (int)System.currentTimeMillis();
 			try {

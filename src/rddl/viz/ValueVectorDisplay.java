@@ -66,7 +66,7 @@ public class ValueVectorDisplay extends StateViz {
 		BufferedWriter bw = null;
 		PrintWriter out = null;
 		try {
-		    fw = new FileWriter(path, true);
+		    fw = new FileWriter(path);
 		    bw = new BufferedWriter(fw);
 		    out = new PrintWriter(bw);
 		} catch (IOException e) {
@@ -116,6 +116,53 @@ public class ValueVectorDisplay extends StateViz {
 						sb.append(s.getPVariableAssign(p, gfluents.get(i))+((i+1)==gfluents.size()? "" : ","));
 					sb.append(",");
 						
+				} catch (EvalException ex) {
+					sb.append("- could not retrieve assignment " + s + " for " + p + "\n");
+				}
+			}
+		}
+		String output = sb.toString();		
+		return output.substring(0, output.length()-1);
+	}
+	
+	
+	public void initFileWriting(State s){
+		String variable = getGroundNames(s);
+		if(_bSuppressWriteFile == true){
+			if(_bSuppressActionFluents == true){
+				_pLabelOut.println(variable);
+			}else{
+				_pDataOut.println(variable);
+			}
+		}
+	}
+	/**
+	 * @param s
+	 * @return String
+	 * 
+	 * For each output files, we need to build several lines to show the variable name and terms of each data columns.
+	 * Since the list could be quite big, we probably need to write it in multiple lines.
+	 */
+	public String getGroundNames(State s){
+		StringBuilder sb = new StringBuilder("");
+		
+		for (Map.Entry<String,ArrayList<PVAR_NAME>> e : s._hmTypeMap.entrySet()) {			
+			if (_bSuppressNonFluents && e.getKey().equals("nonfluent"))
+				continue;
+			if (_bSuppressIntermFluents && e.getKey().equals("interm"))
+				continue;
+			if (_bSuppressActionFluents && e.getKey().equals("action"))
+				continue;
+			
+			// Go through all variable names p for a variable type
+			for (PVAR_NAME p : e.getValue()) {
+
+				String var_type = e.getKey();
+				try {
+					// Go through all term groundings for variable p
+					ArrayList<ArrayList<LCONST>> gfluents = s.generateAtoms(p);										
+					for (ArrayList<LCONST> gfluent : gfluents)
+						sb.append(var_type + ": " + p + (gfluent.size() > 0 ? gfluent : "") + ",");						
 				} catch (EvalException ex) {
 					sb.append("- could not retrieve assignment " + s + " for " + p + "\n");
 				}

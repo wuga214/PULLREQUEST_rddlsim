@@ -36,12 +36,12 @@ domain Reservoir_Problem{
 	};
 	
 	reward = 0;
-//	reward = sum_{?r: id} [if (rlevel'(?r)>=LOW_BOUND(?r) ^ (rlevel'(?r)<=HIGH_BOUND(?r)))
-//									then 0
-// 									else if (rlevel'(?r)<=LOW_BOUND(?r)
-// 										then (-5)*(LOW_BOUND(?r)-rlevel'(?r))
-//										else (-100)*(rlevel'(?r)-HIGH_BOUND(?r))							
-//								];
+	reward = sum_{?r: id} [if (rlevel'(?r)>=LOW_BOUND(?r) ^ (rlevel'(?r)<=HIGH_BOUND(?r)))
+									then 0
+ 									else if (rlevel'(?r)<=LOW_BOUND(?r))
+ 										then (-5)*(LOW_BOUND(?r)-rlevel'(?r))
+										else (-100)*(rlevel'(?r)-HIGH_BOUND(?r))							
+								];
 								
 	state-action-constraints {
 	
