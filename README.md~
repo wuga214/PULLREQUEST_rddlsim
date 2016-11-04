@@ -1,13 +1,16 @@
 ### Progress
-1. Data Extraction from RDDL is functional(Done)
-2. Domain Reservoir description(Done)
+1. Data Extraction from RDDL is functional
+2. Domain Reservoir is function
 3. Policy for Reservoir(Done)
-4. Domain Determinization(Done)
-5. store PVAR+TERM to output file(Done)
-6. Bug free testing(Done)
 
 ### TODO
 1. Domain Description for Inventory control and power gen
+
+### New Helper Class
+./run rddl.Help
+
+### New DomainExplorer
+./run rddl.sim.DomainExplorer
 
 ### New folder to accept data and label output for Neural Network training.
 
@@ -17,7 +20,7 @@ Modified run to accept more than 13 parameters
 RDDL Interface Improvement
 ===============================================
 
-# Updated parameter handling
+Updated parameter handling
 
 ```
 *********************************************************
@@ -35,13 +38,8 @@ RDDL Interface Improvement
 *********************************************************
 ```
 
-## Examples
+Examples:
 
 1. ./run rddl.sim.Simulator -R files/Reservoir/Reservoir_det.rddl -P rddl.policy.domain.reservoir.StochasticReservoirPolicy -I is1 -V rddl.viz.GenericScreenDisplay
 
 2. ./run rddl.sim.DomainExplorer -R files/Reservoir/Reservoir_det.rddl -P rddl.policy.domain.reservoir.StochasticReservoirPolicy -I is1 -V rddl.viz.ValueVectorDisplay
-
-# Added Functions
-
-1. State.getPossibleTerms(...): Used to find most possible terms given partial fluents known or true value known.
-2. Help class: Used to store all command helping information. This will be extended to give instruction for public interfaces later.
