@@ -34,19 +34,19 @@ public class ValueVectorDisplay extends StateViz {
 		_bSuppressIntermFluents = suppress_intermfluents;
 	}
 	
-	public void StateOnly(){
+	public void stateOnly(){
 		_bSuppressActionFluents = true;
 		_bSuppressNonFluents = true;
 		_bSuppressIntermFluents = true;		
 	}
 	
-	public void StateAction(){
+	public void stateAction(){
 		_bSuppressActionFluents = false;
 		_bSuppressNonFluents = true;
 		_bSuppressIntermFluents = true;
 	}
 	
-	public void WriteFile(String data_path, String label_path){
+	public void writeFile(String data_path, String label_path){
 		_bSuppressWriteFile = true;
 		_sDataPath = data_path;
 		_sLabelPath = label_path;		

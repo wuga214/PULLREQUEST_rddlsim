@@ -15,7 +15,7 @@ public class Help {
 	 * -D: output data path
 	 * -L: output label path
 	 */
-	public static String getParaDescription(){
+	public static String getSimulatorParaDescription(){
 		StringBuilder sb = new StringBuilder("\n*********************************************************");		
 		sb.append("\n>>> Parameter Description");
 		sb.append("\n*********************************************************");
@@ -34,7 +34,7 @@ public class Help {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(getParaDescription());
+		System.out.println(getSimulatorParaDescription());
 		System.out.print("Type 'exit' to leave the help program: ");
 		Scanner sc = new Scanner (System.in);
 		

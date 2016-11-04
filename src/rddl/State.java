@@ -772,8 +772,7 @@ public class State {
 					continue;
 				}
 			}else{
-				giveup=true;
-				continue;
+				pob_assign.add(key);
 			}
 		}
 		

@@ -107,14 +107,14 @@ public class DomainExplorer {
 			_state.setPVariables(_state._actions, action_list);
 			
 			// Set visualization to print state-action pair
-			_v.StateAction();
+			_v.stateAction();
 			_v.display(_state, t);
 			
 			// Compute next state (and all intermediate / observation variables)
 			_state.computeNextState(action_list, _rand);
 
 			// Set visualization to print only state info
-			_v.StateOnly();
+			_v.stateOnly();
 			_v.display(_state, t);
 
 			// Calculate reward / objective and store
@@ -140,7 +140,7 @@ public class DomainExplorer {
 	
 	public void Search(int rounds, String data_path, String label_path){
 		if(!data_path.equals("") && !label_path.equals(""))
-			_v.WriteFile(data_path, label_path);
+			_v.writeFile(data_path, label_path);
 		for(int i=0;i<rounds;i++){
 			int rand_seed = (int)System.currentTimeMillis();
 			try {

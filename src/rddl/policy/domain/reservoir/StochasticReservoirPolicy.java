@@ -2,6 +2,7 @@ package rddl.policy.domain.reservoir;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 import rddl.EvalException;
 import rddl.RDDL;
@@ -24,6 +25,11 @@ public class StochasticReservoirPolicy extends Policy {
 		super(instance_name);
 	}
 
+	/* (non-Javadoc)
+	 * @see rddl.policy.Policy#getActions(rddl.State)
+	 * 
+	 * This function should modified that allows to select 4 concurrent actions..
+	 */
 	@Override
 	public ArrayList<PVAR_INST_DEF> getActions(State s) throws EvalException {
 		
@@ -49,13 +55,11 @@ public class StochasticReservoirPolicy extends Policy {
 				RDDL.PVARIABLE_ACTION_DEF action_def = (RDDL.PVARIABLE_ACTION_DEF)pvar_def;
 				
 				Object value = null;
-				if (_random.nextUniform(0d, 1d) < 0.5d) {
+				if (terms.get(0).toString().equals("$sea")) {
 					continue;
-
-				} else { 
-					value = getReasonableValue(s, action_def._typeRange, terms);
-				}
-	
+				}  
+				
+				value = getReasonableValue(s, action_def._typeRange, terms);
 				actions.add(new PVAR_INST_DEF(p._sPVarName, value, terms));
 				try {
 					s.checkStateActionConstraints(actions);
@@ -91,25 +95,44 @@ public class StochasticReservoirPolicy extends Policy {
 		return actions;
 	}
 
+	/**
+	 * @param s
+	 * @param _typeRange
+	 * @param terms
+	 * @return
+	 * @throws EvalException
+	 * 
+	 * A reasonable value is that
+	 * Flow(i) will never bigger than MAXCAP
+	 */
 	private Object getReasonableValue(State s, TYPE_NAME _typeRange, ArrayList<LCONST> terms) throws EvalException {
+		
 		HashMap<Integer, LCONST> knownterms=new HashMap<Integer, LCONST>();
 		knownterms.put(0, terms.get(0));
 		PVAR_NAME p = new PVAR_NAME("DOWNSTREAM");
 		ArrayList<ArrayList<LCONST>> possible_terms=null;
 		try {
-			possible_terms = s.getPossibleTerms(p, knownterms, null);
+			possible_terms = s.getPossibleTerms(p, knownterms, true);
 		} catch (EvalException e) {
 			e.printStackTrace();
 		}
 		
 		if(possible_terms.isEmpty()){
-			throw new EvalException("No compariable terms for Pvaraible " + p+" and "+ terms +"");
+			throw new EvalException("No compariable terms for Pvaraible " + p+" and "+ terms.get(0).toString() +"");
+		}
+
+		double current_rlevel = (Double) s.getPVariableAssign(new PVAR_NAME("rlevel"), terms);
+		double current_high = (Double) s.getPVariableAssign(new PVAR_NAME("HIGH_BOUND"), terms);
+		double current_low = (Double) s.getPVariableAssign(new PVAR_NAME("LOW_BOUND"), terms);
+		double upper_bound = Math.max(0, current_rlevel-current_low);
+//		System.out.println(terms.get(0).toString()+" "+current_rlevel+" "+current_high+" "+current_low+" "+upper_bound);
+		Random random = new Random();
+		if(current_rlevel<=current_high){
+			return random.nextDouble()*upper_bound;
+		}else{
+			return 0.5*current_rlevel;
 		}
 		
-		LCONST downsteam_id = possible_terms.get(0).get(1);
-		
-		
-		return null;
 	}
 
 }

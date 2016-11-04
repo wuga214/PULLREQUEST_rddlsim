@@ -14,6 +14,7 @@ import java.util.*;
 import rddl.*;
 import rddl.viz.*;
 import rddl.policy.*;
+import rddl.policy.domain.reservoir.*;
 import rddl.RDDL.*;
 import rddl.parser.parser;
 import org.apache.commons.math3.*;
