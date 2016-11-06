@@ -23,11 +23,11 @@ public class Help {
 		sb.append("\n[2]: -P: Policy name e.g. rddl.policy.RandomBoolPolicy");
 		sb.append("\n[3]: -I: Instance name e.g. elevators_inst_mdp__9");
 		sb.append("\n[4]: -V: Visualization Method e.g. rddl.viz.GenericScreenDisplay");
-		sb.append("\n[5]: -S: Random seed for simulator to sample output.");
-		sb.append("\n[6]: -X: Random seed for policy to take random actions.");
-		sb.append("\n[7]: -K: Number of rounds. Default:1");		
-		sb.append("\n[8]: -D: Output file address for state-action pair");
-		sb.append("\n[9]: -L: Output file address for state label");
+		sb.append("\n[5]: -S: (Optional) Random seed for simulator to sample output.");
+		sb.append("\n[6]: -X: (Optional) Random seed for policy to take random actions.");
+		sb.append("\n[7]: -K: (Optional) Number of rounds. Default:1");		
+		sb.append("\n[8]: -D: (Optional) Output file address for state-action pair");
+		sb.append("\n[9]: -L: (Optional) Output file address for state label");
 		sb.append("\n*********************************************************");
 		return sb.toString();
 	}
@@ -38,9 +38,9 @@ public class Help {
 		sb.append("\n*********************************************************");
 		sb.append("\n[1]: -R: RDDL file or directory that contains RDDL file");
 		sb.append("\n[2]: -P: Policy name e.g. rddl.policy.RandomBoolPolicy");
-		sb.append("\n[3]: -D: Directed, 'true' or 'false'");
-		sb.append("\n[4]: -L: Strict-levels, 'true' or 'false'");
-		sb.append("\n[5]: -G: Strict-grouping, 'true' or 'false'");
+		sb.append("\n[3]: -D: (Optional) Directed, 'true' or 'false'");
+		sb.append("\n[4]: -L: (Optional) Strict-levels, 'true' or 'false'");
+		sb.append("\n[5]: -G: (Optional) Strict-grouping, 'true' or 'false'");
 		sb.append("\n*********************************************************");
 		return sb.toString();
 	}
