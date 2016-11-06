@@ -31,6 +31,19 @@ public class Help {
 		sb.append("\n*********************************************************");
 		return sb.toString();
 	}
+	
+	public static String getGraphParaDescription(){
+		StringBuilder sb = new StringBuilder("\n*********************************************************");		
+		sb.append("\n>>> Parameter Description");
+		sb.append("\n*********************************************************");
+		sb.append("\n[1]: -R: RDDL file or directory that contains RDDL file");
+		sb.append("\n[2]: -P: Policy name e.g. rddl.policy.RandomBoolPolicy");
+		sb.append("\n[3]: -D: Directed, 'true' or 'false'");
+		sb.append("\n[4]: -L: Strict-levels, 'true' or 'false'");
+		sb.append("\n[5]: -G: Strict-grouping, 'true' or 'false'");
+		sb.append("\n*********************************************************");
+		return sb.toString();
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
