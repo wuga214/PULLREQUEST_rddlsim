@@ -1,3 +1,5 @@
+RDDL In My Research
+===============================================
 ### Progress
 1. Data Extraction from RDDL is functional(Done)
 2. Domain Reservoir description(Done)
@@ -11,8 +13,12 @@
 
 ### New folder to accept data and label output for Neural Network training.
 
-### RUN
-Modified run to accept more than 13 parameters
+About RDDL
+===============================================
+This repository is used to do my research and also improve original rddl environment. If you are looking for using rddl please look at and *cite* its original repository:
+```
+https://github.com/ssanner/rddlsim
+```
 
 RDDL Interface Improvement
 ===============================================
@@ -49,9 +55,11 @@ Mac-mini:rddlsim Wuga$ ./run rddl.viz.RDDL2Graph
 1. State.getPossibleTerms(...): Used to find most possible terms given partial fluents known or true value known.
 2. Help class: Used to store all command helping information. This will be extended to give instruction for public interfaces later.
 3. DotFileFixer: Used to fix *.dot files so that old package like grappa can work with new version of Graphviz
+4. ArgsParser: Used to accept main function arguments, this class can make sure the parameters read in doesn't depend on their order.
 
 RDDL Error Fixing
 ===============================================
 1. Fixed a bug that cause Bayesian Network Graph couldn't be properly shown in Java.
+2. Modified run to accept more than 13 parameters
 
 
