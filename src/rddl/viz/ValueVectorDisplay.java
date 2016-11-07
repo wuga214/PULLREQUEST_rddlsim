@@ -13,6 +13,7 @@ import rddl.RDDL.LCONST;
 import rddl.RDDL.PVARIABLE_DEF;
 import rddl.RDDL.PVARIABLE_INTERM_DEF;
 import rddl.RDDL.PVAR_NAME;
+import rddl.RDDL.TYPE_NAME;
 
 public class ValueVectorDisplay extends StateViz {
 
@@ -42,6 +43,7 @@ public class ValueVectorDisplay extends StateViz {
 	
 	public void stateAction(){
 		_bSuppressActionFluents = false;
+//		_bSuppressNonFluents = false;
 		_bSuppressNonFluents = true;
 		_bSuppressIntermFluents = true;
 	}
@@ -107,13 +109,17 @@ public class ValueVectorDisplay extends StateViz {
 			
 			// Go through all variable names p for a variable type
 			for (PVAR_NAME p : e.getValue()) {
-
-				String var_type = e.getKey();
 				try {
+					PVARIABLE_DEF pvar_def = s._hmPVariables.get(p);
 					// Go through all term groundings for variable p
-					ArrayList<ArrayList<LCONST>> gfluents = s.generateAtoms(p);										
-					for (int i=0; i<gfluents.size();i++)
-						sb.append(s.getPVariableAssign(p, gfluents.get(i))+((i+1)==gfluents.size()? "" : ","));
+					ArrayList<ArrayList<LCONST>> gfluents = s.generateAtoms(p);
+					if(pvar_def._typeRange.equals(TYPE_NAME.BOOL_TYPE)){
+						for (int i=0; i<gfluents.size();i++)
+							sb.append(((boolean)s.getPVariableAssign(p, gfluents.get(i))?1:0)+((i+1)==gfluents.size()? "" : ","));
+					}else{										
+						for (int i=0; i<gfluents.size();i++)
+							sb.append(s.getPVariableAssign(p, gfluents.get(i))+((i+1)==gfluents.size()? "" : ","));
+					}
 					sb.append(",");
 						
 				} catch (EvalException ex) {
@@ -161,8 +167,11 @@ public class ValueVectorDisplay extends StateViz {
 				try {
 					// Go through all term groundings for variable p
 					ArrayList<ArrayList<LCONST>> gfluents = s.generateAtoms(p);										
-					for (ArrayList<LCONST> gfluent : gfluents)
-						sb.append(var_type + ": " + p + (gfluent.size() > 0 ? gfluent : "") + ",");						
+					for (ArrayList<LCONST> gfluent : gfluents){
+						String terms = gfluent.toString();	
+						terms =terms.replace(',', '|');
+						sb.append(var_type + ": " + p + (gfluent.size() > 0 ? terms : "") + ",");
+					}
 				} catch (EvalException ex) {
 					sb.append("- could not retrieve assignment " + s + " for " + p + "\n");
 				}
