@@ -7,9 +7,11 @@ RDDL In My Research
 4. Domain Determinization(Done)
 5. store PVAR+TERM to output file(Done)
 6. Bug free testing(Done)
+7. Domain Inventory description(Done)
+8. Policy for Inventory(Done)
 
 ### TODO
-1. Domain Description for Inventory control and power gen
+1. Domain Description for power gen(If necessary)
 
 ### New folder to accept data and label output for Neural Network training.
 
