@@ -92,10 +92,10 @@ non-fluents inventory_item4{
 		UNIT_COST(c2) = 4;
 		
 		// Set the demand for each commodity
-		DEMAND_STD(c1) = 5;
-		DEMAND_STD(c2) = 8;
-		DEMAND_STD(c3) = 2;
-		DEMAND_STD(c4) = 6;
+		DEMAND(c1) = 5;
+		DEMAND(c2) = 8;
+		DEMAND(c3) = 2;
+		DEMAND(c4) = 6;
 		
 		// Define the PREV values needed for recursion
 		PREV(c1) = $c1;

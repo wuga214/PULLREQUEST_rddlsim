@@ -88,8 +88,8 @@ non-fluents inventory_item4{
 		// Set the per unit cost for each commodity
 		UNIT_COST(c1) = 1;
 		UNIT_COST(c2) = 2;
-		UNIT_COST(c2) = 3;
-		UNIT_COST(c2) = 4;
+		UNIT_COST(c3) = 3;
+		UNIT_COST(c4) = 4;
 		
 		// Set the demand for each commodity
 		DEMAND(c1) = 5;
