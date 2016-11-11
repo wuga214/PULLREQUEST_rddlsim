@@ -77,6 +77,6 @@ instance inst_rtc_cav{
 	domain = rtc_cav;
 	non-fluents = nf_rtc_cav;
 
-	horizon = 40;
+	horizon = 100;
 	discount = 0.9;
 }
