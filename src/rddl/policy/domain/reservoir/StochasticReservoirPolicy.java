@@ -111,15 +111,15 @@ public class StochasticReservoirPolicy extends Policy {
 		knownterms.put(0, terms.get(0));
 		PVAR_NAME p = new PVAR_NAME("DOWNSTREAM");
 		ArrayList<ArrayList<LCONST>> possible_terms=null;
-		try {
-			possible_terms = s.getPossibleTerms(p, knownterms, true);
-		} catch (EvalException e) {
-			e.printStackTrace();
-		}
-		
-		if(possible_terms.isEmpty()){
-			throw new EvalException("No compariable terms for Pvaraible " + p+" and "+ terms.get(0).toString() +"");
-		}
+//		try {
+//			possible_terms = s.getPossibleTerms(p, knownterms, true);
+//		} catch (EvalException e) {
+//			e.printStackTrace();
+//		}
+//		
+//		if(possible_terms.isEmpty()){
+//			throw new EvalException("No compariable terms for Pvaraible " + p+" and "+ terms.get(0).toString() +"");
+//		}
 
 		double current_rlevel = (Double) s.getPVariableAssign(new PVAR_NAME("rlevel"), terms);
 		double current_high = (Double) s.getPVariableAssign(new PVAR_NAME("HIGH_BOUND"), terms);
