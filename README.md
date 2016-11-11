@@ -48,7 +48,7 @@ Mac-mini:rddlsim Wuga$ ./run rddl.viz.RDDL2Graph
 
 1. ./run rddl.sim.Simulator -R files/Reservoir/Reservoir_det.rddl -P rddl.policy.domain.reservoir.StochasticReservoirPolicy -I is1 -V rddl.viz.GenericScreenDisplay
 2. ./run rddl.sim.DomainExplorer -R files/Reservoir/Reservoir_det.rddl -P rddl.policy.domain.reservoir.StochasticReservoirPolicy -I is1 -V rddl.viz.ValueVectorDisplay -K 100 -D nn/Reservoir_Data.txt -L nn/Reservoir_Label.txt
-3. 
+3. ./run rddl.sim.Simulator -R files/HVAC/RTC_CAV.rddl2 -P rddl.policy.RandomConcurrentPolicy -I inst_rtc_cav -V rddl.viz.RTCDisplay
 
 ### RDDL to Bayesian Net Graph
 1. ./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_det.rddl -I is1
