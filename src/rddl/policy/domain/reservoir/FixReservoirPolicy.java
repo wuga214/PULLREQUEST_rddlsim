@@ -118,7 +118,7 @@ public class FixReservoirPolicy extends Policy {
 		double upper_bound = Math.max(0, current_rlevel-(current_high+current_low)/2.0);
 		Random random = new Random();
 		if(current_rlevel<=current_high){
-			return upper_bound+random.nextGaussian()*3;
+			return upper_bound+random.nextGaussian();
 		}else{
 			return 0.5*current_rlevel;
 		}

@@ -23,7 +23,7 @@ domain Reservoir_Problem{
 		RAIN(id): { non-fluent ,real, default = 5.0 };
 		DOWNSTREAM(id,id): {non-fluent ,bool, default = false };
 		DOWNTOSEA(id): {non-fluent, bool, default = false };
-		EVAPORATIONFACTOR(id): {non-fluent, real, default = 50.0 };
+		EVAPORATIONFACTOR(id): {non-fluent, real, default = 80.0 };
 
 		//Interm
 		vaporated(id): {interm-fluent, real};
