@@ -56,7 +56,7 @@ public class FixNavigationPolicy extends Policy{
 					continue;
 				}  
 				
-				value = 0.5;
+				value = 1.0;
 				actions.add(new PVAR_INST_DEF(p._sPVarName, value, terms));
 				try {
 					s.checkStateActionConstraints(actions);
