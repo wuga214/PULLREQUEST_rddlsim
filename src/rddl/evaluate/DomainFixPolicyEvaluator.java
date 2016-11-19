@@ -64,7 +64,7 @@ public class DomainFixPolicyEvaluator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String logfile="log.txt";
+		String logfile="logs/HVAC_log.txt";
 		int size=30;
 		double[] values=getRewards(logfile,size);
 		System.out.println("");
