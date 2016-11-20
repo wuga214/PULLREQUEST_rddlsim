@@ -36,7 +36,7 @@ domain Reservoir_Problem{
 	};
 	
 	cpfs {
-		vaporated(?r) = (1.0/2.0)*sin[(1.0/2.0)*rlevel(?r)/BIGGESTMAXCAP]*rlevel(?r);
+		vaporated(?r) = (1.0/2.0)*sin[rlevel(?r)/BIGGESTMAXCAP]*rlevel(?r);
 		rlevel'(?r) = rlevel(?r) + RAIN(?r)- vaporated(?r) - flow(?r) + sum_{?r2: id}[DOWNSTREAM(?r2,?r)*flow(?r2)];
 
 	};
@@ -45,7 +45,7 @@ domain Reservoir_Problem{
 									then 0
  									else if (rlevel'(?r)<=LOW_BOUND(?r))
  										then (-5)*(LOW_BOUND(?r)-rlevel'(?r))
-										else (-100)*(rlevel'(?r)-HIGH_BOUND(?r))]+sum_{?r2:id}[abs[((HIGH_BOUND(?r2)+LOW_BOUND(?r2))/2.0)-rlevel'(?r2)]*(-0.1)];
+										else (-100)*(rlevel'(?r)-HIGH_BOUND(?r))];
 								
 	state-action-constraints {
 	
