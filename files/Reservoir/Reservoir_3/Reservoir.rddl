@@ -51,7 +51,6 @@ domain Reservoir_Problem{
 	
 		forall_{?r:id} flow(?r)<=rlevel(?r);
 		forall_{?r:id} rlevel(?r)<=MAXCAP(?r);
-		//forall_{?r:id} flow(?r)<=sum_{?r2: id}[(MAXCAP(?r2)-rlevel(?r2))*DOWNSTREAM(?r,?r2)]+100000*DOWNTOSEA(?r);
 		forall_{?r:id} flow(?r)>=0;
 	};
 
@@ -82,7 +81,7 @@ instance is1{
 	init-state{
 		rlevel(t1) = 75.0;
 	};
-	max-nondef-actions = 4;
-	horizon = 10;
+	max-nondef-actions = 3;
+	horizon = 20;
 	discount = 1.0;
 }
