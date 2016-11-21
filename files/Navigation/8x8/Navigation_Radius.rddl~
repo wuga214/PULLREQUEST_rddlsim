@@ -23,7 +23,7 @@ domain Navigation_Problem{
 		MAXACTIONBOUND(dim): { non-fluent, real, default = 1.0 };
 		GOAL(dim): { non-fluent, real, default = 7.0 };
 		PENALTY: {non-fluent, real, default = 1000000.0 };
-		CENTER(dim): {non-fluent, real, default = 5.0};
+		CENTER(dim): {non-fluent, real, default = 4.0};
 		
 		// Interm		
 		distance: {interm-fluent,real,level=1 };

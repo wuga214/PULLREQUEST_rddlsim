@@ -21,7 +21,7 @@ domain Navigation_Problem{
 		MAXMAZEBOUND(dim): { non-fluent, real, default = 10.0 };
 		MINACTIONBOUND(dim): { non-fluent, real, default = -1.0 };
 		MAXACTIONBOUND(dim): { non-fluent, real, default = 1.0 };
-		GOAL(dim): { non-fluent, real, default = 10.0 };
+		GOAL(dim): { non-fluent, real, default = 8.0 };
 		PENALTY: {non-fluent, real, default = 1000000.0 };
 		CENTER(dim): {non-fluent, real, default = 5.0};
 		

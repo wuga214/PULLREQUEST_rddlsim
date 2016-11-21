@@ -53,8 +53,8 @@ domain hvac_vav_fix{
 		};
 		
 
-  	reward = - (sum_{?s : space} ISROOM(?s)*(AIR(?s) * COSTAIR
-  			    + ((TEMP(?s) < TEMPLOW(?s)) | (TEMP(?s) > TEMPUP(?s))) * PENALTY) + 10.0*abs[((TEMPUP(?s) + TEMPLOW(?s))/2.0) - TEMP(?s)]);
+  	reward = - (sum_{?s : space} IS_ROOM(?s)*(AIR(?s) * COST_AIR
+  			    + ((TEMP(?s) < TEMP_LOW(?s)) | (TEMP(?s) > TEMP_UP(?s))) * PENALTY) + 10.0*abs[((TEMP_UP(?s) + TEMP_LOW(?s))/2.0) - TEMP(?s)]);
 
     action-preconditions{
 			forall_{?s : space} [ AIR(?s) >= 0 ];

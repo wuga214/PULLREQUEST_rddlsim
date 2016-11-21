@@ -68,8 +68,8 @@ Bayesian Network Display
 ## Reservoir 4
 ./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_4/Reservoir.rddl -I is1
 
-## Reservoir 8
-./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_4/Reservoir.rddl -I is1
+## Reservoir 3
+./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_3/Reservoir.rddl -I is1
 
 ## HVAC_6
 ./run rddl.viz.RDDL2Graph -R files/HVAC/ROOM_6/HVAC_VAV.rddl2 -I inst_hvac_vav_fix
@@ -82,6 +82,12 @@ Bayesian Network Display
 
 ## Navigation_10x10
 ./run rddl.viz.RDDL2Graph -R files/Navigation/10x10/Navigation_Radius.rddl -I is1
+
+
+Parse Log Files to get Mean and std
+===
+./run rddl.evaluate.DomainFixPolicyEvaluator -F logs
+
 
 
 
