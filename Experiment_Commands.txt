@@ -86,6 +86,7 @@ Bayesian Network Display
 
 Parse Log Files to get Mean and std
 ===
+./dofixedpolicies.sh
 ./run rddl.evaluate.DomainFixPolicyEvaluator -F logs
 
 

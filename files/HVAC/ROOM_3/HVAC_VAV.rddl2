@@ -92,6 +92,6 @@ instance inst_hvac_vav_fix{
 	domain = hvac_vav_fix;
 	non-fluents = nf_hvac_vav_fix;
 
-	horizon = 10;
-	discount = 0.9;
+	horizon = 20;
+	discount = 1.0;
 }

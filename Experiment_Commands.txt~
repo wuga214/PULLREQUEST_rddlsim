@@ -68,8 +68,8 @@ Bayesian Network Display
 ## Reservoir 4
 ./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_4/Reservoir.rddl -I is1
 
-## Reservoir 8
-./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_4/Reservoir.rddl -I is1
+## Reservoir 3
+./run rddl.viz.RDDL2Graph -R files/Reservoir/Reservoir_3/Reservoir.rddl -I is1
 
 ## HVAC_6
 ./run rddl.viz.RDDL2Graph -R files/HVAC/ROOM_6/HVAC_VAV.rddl2 -I inst_hvac_vav_fix
