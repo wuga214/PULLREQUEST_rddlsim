@@ -10,6 +10,10 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import rddl.Help;
+import rddl.parser.parser;
+import util.ArgsParser;
+
 public class DomainFixPolicyEvaluator {
 	
 	public static double[] getRewards(String LOG_FILE,int SIZE){
@@ -24,7 +28,7 @@ public class DomainFixPolicyEvaluator {
 			    	Matcher m = p.matcher(line);
 			    	if(m.find()){
 			    	String value = m.group(1);
-			    	System.out.print(value+",");
+			    	//System.out.print(value+",");
 			    	values[count]=Double.parseDouble(value);
 			    	count++;
 		    	}
@@ -62,14 +66,41 @@ public class DomainFixPolicyEvaluator {
 	
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		String logfile="logs/HVAC_log.txt";
-		int size=30;
-		double[] values=getRewards(logfile,size);
-		System.out.println("");
-		System.out.println("Mean:"+getMean(values));
-		System.out.println("STD:"+getStdDev(values));
+		if (ArgsParser.getOptionPos("F",args)==-1 ) {
+			System.out.println(Help.getRwdExtParaDescription());
+			System.exit(1);
+		}
+		String log_files = ArgsParser.getOption("F", args);
+		
+		try {
+			File f = new File(log_files);
+			if (f.isDirectory()) {
+				for (File f2 : f.listFiles())
+					if (f2.getName().endsWith("log.txt")) {
+						System.out.println("Loading: " + f2);
+						String logfile=f2.getAbsolutePath();
+						int size=30;
+						double[] values=getRewards(logfile,size);
+						System.out.println(f2.getName());
+						System.out.println("Mean:"+getMean(values));
+						System.out.println("STD:"+getStdDev(values));
+						
+					}
+			} else{
+				String logfile=log_files;
+				int size=30;
+				double[] values=getRewards(logfile,size);
+				System.out.println("");
+				System.out.println("Mean:"+getMean(values));
+				System.out.println("STD:"+getStdDev(values));
+			}
+		} catch (Exception e) {
+			System.out.println("ERROR: Could not parse reward for '" + log_files + "'\n");// + e);
+			//e.printStackTrace();
+			System.exit(1);
+		}
 	}
 
 }
