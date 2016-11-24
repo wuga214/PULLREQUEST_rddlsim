@@ -5,11 +5,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
+import java.lang.Number;
+
+import org.apache.commons.math3.random.RandomDataGenerator;
 
 import rddl.EvalException;
 import rddl.State;
 import rddl.RDDL.LCONST;
+import rddl.RDDL.LVAR;
 import rddl.RDDL.PVARIABLE_DEF;
 import rddl.RDDL.PVARIABLE_INTERM_DEF;
 import rddl.RDDL.PVAR_NAME;
@@ -23,8 +29,10 @@ public class ValueVectorDisplay extends StateViz {
 	public boolean _bSuppressWriteFile = false;
 	public String _sDataPath = null;
 	public String _sLabelPath = null;
+	public String _sRewardPath = null;
 	public PrintWriter _pDataOut = null;
 	public PrintWriter _pLabelOut = null;
+	public PrintWriter _pRewardOut = null;
 	
 	public ValueVectorDisplay() {
 		_bSuppressNonFluents = true;
@@ -56,10 +64,23 @@ public class ValueVectorDisplay extends StateViz {
 		_pLabelOut = getFileHandler(label_path);
 	}
 	
+	public void writeFile(String data_path, String label_path, String reward_path){
+		_bSuppressWriteFile = true;
+		_sDataPath = data_path;
+		_sLabelPath = label_path;	
+		_sRewardPath = reward_path;
+		_pDataOut = getFileHandler(data_path);
+		_pLabelOut = getFileHandler(label_path);
+		_pRewardOut = getFileHandler(reward_path);
+	}
+	
 	public void close(){
 		if(_pDataOut!=null&&_pLabelOut!=null){
 			_pDataOut.close();
 			_pLabelOut.close();
+		}
+		if(_pRewardOut!=null){
+			_pRewardOut.close();
 		}
 	}
 	
@@ -85,7 +106,10 @@ public class ValueVectorDisplay extends StateViz {
 		//System.out.println(vector);
 		if(_bSuppressWriteFile == true){
 			if(_bSuppressActionFluents == true){
+				String reward = getReward(s);
+				System.out.println(reward);
 				_pLabelOut.println(vector);
+				_pRewardOut.println(reward);
 			}else{
 				_pDataOut.println(vector);
 			}
@@ -137,6 +161,7 @@ public class ValueVectorDisplay extends StateViz {
 		if(_bSuppressWriteFile == true){
 			if(_bSuppressActionFluents == true){
 				_pLabelOut.println(variable);
+				_pRewardOut.println("Reward");
 			}else{
 				_pDataOut.println(variable);
 			}
@@ -179,6 +204,20 @@ public class ValueVectorDisplay extends StateViz {
 		}
 		String output = sb.toString();		
 		return output.substring(0, output.length()-1);
+	}
+	
+	public String getReward(State s){
+		RandomDataGenerator rand = new RandomDataGenerator();
+		Object rewardobj="";
+		String reward="";
+		try {
+			rewardobj = s._reward.sample(new HashMap<LVAR,LCONST>(), s, rand);
+		} catch (EvalException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		reward=Double.toString(((Number)rewardobj).doubleValue());
+		return reward;
 	}
 
 }

@@ -134,9 +134,13 @@ public class DomainExplorer {
 	
 	//////////////////////////////////////////////////////////////////////////////
 	
-	public void Search(int rounds, String data_path, String label_path){
+	public void Search(int rounds, String data_path, String label_path,String reward_path){
 		if(!data_path.equals("") && !label_path.equals(""))
-			_v.writeFile(data_path, label_path);
+			if(!reward_path.equals("")){
+				_v.writeFile(data_path, label_path,reward_path);
+			}else{
+				_v.writeFile(data_path, label_path);
+			}
 			_v.stateAction();
 			_v.initFileWriting(_state);
 			_v.stateOnly();
@@ -156,7 +160,8 @@ public class DomainExplorer {
 	public void Search(int rounds){
 		String data_path="";
 		String label_path="";
-		Search(rounds, data_path, label_path);
+		String reward_path="";
+		Search(rounds, data_path, label_path,reward_path);
 	}
 	
 
@@ -189,6 +194,7 @@ public class DomainExplorer {
 		String state_viz_class_name = "rddl.viz.ValueVectorDisplay";
 		String data_path="";
 		String label_path="";
+		String reward_path="";
 		int rand_seed_sim = (int)System.currentTimeMillis(); // 123456
 		int rand_seed_policy = (int)System.currentTimeMillis(); // 123456
 		int rounds = 1;
@@ -204,6 +210,9 @@ public class DomainExplorer {
 		if (ArgsParser.getOptionPos("D",args)!=-1&&ArgsParser.getOptionPos("L",args)!=-1){
 			data_path=ArgsParser.getOption("D",args);
 			label_path=ArgsParser.getOption("L",args);
+			if(ArgsParser.getOptionPos("U",args)!=-1){
+				reward_path=ArgsParser.getOption("U",args);
+			}
 		}
 		
 		// Load RDDL files
@@ -216,7 +225,7 @@ public class DomainExplorer {
 		pol.setRDDL(rddl);
 		ValueVectorDisplay viz = (ValueVectorDisplay)Class.forName(state_viz_class_name).newInstance();
 		DomainExplorer sim = new DomainExplorer(rddl, instance_name,pol,viz);
-		sim.Search(rounds,data_path,label_path);
+		sim.Search(rounds,data_path,label_path,reward_path);
 		
 	}
 
