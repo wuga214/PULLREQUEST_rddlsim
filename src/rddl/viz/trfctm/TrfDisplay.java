@@ -112,7 +112,8 @@ public class TrfDisplay extends StateViz {
 			int arrowStyle = 0;
 			if (time%2 == (row+col)%2) arrowStyle = 1;
 			if (flowToCell[col][row] < 0.05) arrowStyle = -1;
-			gd.setCell(col, row, nCars, density * length, cell.toString().toUpperCase().charAt(0), arrowStyle);
+			//gd.setCell(col, row, nCars, density * length, cell.toString().toUpperCase().charAt(0), arrowStyle);
+			gd.setCell(col, row, nCars, density * length, split[0].charAt(0), arrowStyle);
 		}
 		
 		// Intersection + Signals

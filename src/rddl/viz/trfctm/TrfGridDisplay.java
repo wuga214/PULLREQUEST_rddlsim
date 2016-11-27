@@ -139,11 +139,11 @@ public class TrfGridDisplay extends JPanel {
 
 	// set values of signal i, j to update viz 
 	public void setSignal(int i, int j, String signalStr) {
-		if (signalStr == "@ALL-RED" || signalStr == "@ALL-RED2") 
+		if (signalStr.equals("@ALL-RED") || signalStr.equals("@ALL-RED2")) 
 			signal[i][j] = Signal.ALL_RED;
-		else if (signalStr == "@WEST-EAST")
+		else if (signalStr.equals("@WEST-EAST"))
 			signal[i][j] = Signal.WEST_EAST;
-		else if (signalStr == "@NORTH-SOUTH")
+		else if (signalStr.equals("@NORTH-SOUTH"))
 			signal[i][j] = Signal.NORTH_SOUTH;			
 	}
 	
@@ -283,8 +283,9 @@ public class TrfGridDisplay extends JPanel {
     public static void main(String[] args) {
 		TrfGridDisplay panel = new TrfGridDisplay(20, 15);
 
-    	panel.setCell(0, 9, 9100, 9999, 'R', 1);
-    	panel.setCell(1, 9, 30, 30, 'R', 0);
+		Object r="R_11_11";
+    	panel.setCell(0, 9, 9100, 9999, r.toString().charAt(0), 1);
+    	panel.setCell(1, 9, 30, 30, r.toString().charAt(0), 0);
     	panel.setCell(2, 9, 7, 20, 'R', 1);
     	panel.setCell(3, 9, 2, 20, 'R', 0);
     	panel.setCell(3, 10, 20, 20, 'L', 1);
