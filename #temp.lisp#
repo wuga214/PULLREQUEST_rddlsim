@@ -1,0 +1,3 @@
+(- 0 (sum ( (?s : space) ) (+ (+ (* (AIR ?s) (COST_AIR)) (* (| (< (TEMP ?s) (TEMP_LOW ?s)) (> (TEMP ?s) (TEMP_UP ?s)) ) (PENALTY))) (* 10.0 (abs (- (/ (+ (TEMP_UP ?s) (TEMP_LOW ?s)) 2.0) (TEMP ?s))))
+
+

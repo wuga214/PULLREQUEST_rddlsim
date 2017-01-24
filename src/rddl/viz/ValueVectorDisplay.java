@@ -106,11 +106,11 @@ public class ValueVectorDisplay extends StateViz {
 		//System.out.println(vector);
 		if(_bSuppressWriteFile == true){
 			if(_bSuppressActionFluents == true){
+				_pLabelOut.println(vector);
+			}else{
 				String reward = getReward(s);
 				System.out.println(reward);
-				_pLabelOut.println(vector);
 				_pRewardOut.println(reward);
-			}else{
 				_pDataOut.println(vector);
 			}
 		}
