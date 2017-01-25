@@ -26,7 +26,8 @@ domain Navigation_Problem{
 		CENTER(dim): {non-fluent, real, default = 5.0};
 		
 		// Interm		
-		distance: {interm-fluent,real,level=1 };
+		distance_cur: {interm-fluent,real,level=1 };
+		distance_nex: {interm-fluent,real,level=1 };
 		scalefactor: {interm-fluent,real,level=2 };
 		proposedLoc(dim):{interm-fluent, real, level=3};
  
@@ -39,8 +40,9 @@ domain Navigation_Problem{
 	
 	cpfs {
 
-		distance = sqrt[sum_{?l:dim}[pow[(location(?l)-CENTER(?l)),2]]];
-		scalefactor = 2.0/(1.0+exp[-2*distance])-0.99;
+		distance_cur = sqrt[sum_{?l:dim}[pow[(location(?l)-CENTER(?l)),2]]];
+		distance_nex = sqrt[sum_{?l:dim}[pow[(location(?l)+move(?l)-CENTER(?l)),2]]];
+		scalefactor = (2.0/(1.0+exp[-2*distance])-0.99+2.0/(1.0+exp[-2*distance])-0.99)/2.0;
 		proposedLoc(?l) = location(?l) + move(?l)*scalefactor;
 		location'(?l)= if(proposedLoc(?l)<=MAXMAZEBOUND(?l) ^ proposedLoc(?l)>=MINMAZEBOUND(?l)) then proposedLoc(?l) 
 					else (if(proposedLoc(?l)>MAXMAZEBOUND(?l)) then MAXMAZEBOUND(?l) else MINMAZEBOUND(?l));
@@ -77,7 +79,7 @@ instance is1{
 		location(y) = 0.0;
 	};
 	max-nondef-actions = 2;
-	horizon = 30;
+	horizon = 50;
 	discount = 1.0;
 }
 

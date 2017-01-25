@@ -98,10 +98,20 @@ public class HVACPolicy_VAV extends Policy{
 		double temp_low = (Double) s.getPVariableAssign(new PVAR_NAME("TEMP_LOW"), terms);
 		double air_max =(Double) s.getPVariableAssign(new PVAR_NAME("AIR_MAX"), terms); 
 		Double value = 0.0;
+		Random random = new Random();
+		double epsilon=0.3;
 		if(temp_current<=temp_low){
-			value = air_max;
+			if(random.nextDouble()>epsilon){
+				value = air_max;
+			}else{
+				value = 0.5*air_max+Math.random()*0.5*air_max;
+			}
 		}else if(temp_current>=temp_up){
-			value = 0.0;
+			if(random.nextDouble()>epsilon){
+				value = 0.0;
+			}else{
+				value = Math.random()*0.5*air_max;
+			}
 		} else
 			value = Math.random()*air_max;
 		return value;
