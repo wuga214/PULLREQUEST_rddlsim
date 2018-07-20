@@ -46,7 +46,7 @@ public class StochasticReservoirPolicy extends Policy {
 			
 			// Get term instantations for that action and select *one*
 			ArrayList<ArrayList<LCONST>> inst = s.generateAtoms(p);
-			//System.out.println("Legal instances for " + p + ": " + inst);
+			System.out.println("Legal instances for " + p + ": " + inst);
 			int[] index_permutation = Permutation.permute(inst.size(), _random);
 			
 			for (int i = 0; i < index_permutation.length; i++) {
