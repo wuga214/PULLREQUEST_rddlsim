@@ -57,8 +57,8 @@ public class TensorflowPolicy extends Policy{
 				current_state[i] = String.valueOf((Double) s.getPVariableAssign(new PVAR_NAME("location"), terms));
 			}
 			
-			String outFile = "/media/wuga/Storage/python_project/JAIR-18/temp/state.csv";
-			String inFile = "/media/wuga/Storage/python_project/JAIR-18/temp/action.csv";
+			String outFile = "/media/wuga/Storage/JAIR-18/temp/state.csv";
+			String inFile = "/media/wuga/Storage/JAIR-18/temp/action.csv";
 			
 			double[] action_values = getActionFromPython(current_state, outFile, inFile);
 			System.out.println(action_values);
@@ -105,16 +105,19 @@ public class TensorflowPolicy extends Policy{
 		Process process = null;
 		try {
 			String command = String.format(
-					"python %s -w %s -d %s -i %s -hz %s -a %s -s %s --get_state %s --send_action %s",
-					"/media/wuga/Storage/python_project/JAIR-18/plan.py",
-					"/media/wuga/Storage/python_project/JAIR-18/weights/nav/10x10",
+					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
+					"/media/wuga/Storage/JAIR-18/plan.py",
+					"/media/wuga/Storage/JAIR-18/weights/nav/10x10",
+					"1",
 					"Navigation",
 					"Navigation10",
 					"10",
 					"2",
 					"2",
-					"/media/wuga/Storage/python_project/JAIR-18/temp/state",
-					"/media/wuga/Storage/python_project/JAIR-18/temp/action");
+					"-1",
+					"1",
+					"/media/wuga/Storage/JAIR-18/temp/state",
+					"/media/wuga/Storage/JAIR-18/temp/action");
 				
 			System.out.println(command);
 
