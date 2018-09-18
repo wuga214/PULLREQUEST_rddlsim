@@ -105,28 +105,13 @@ public class TensorflowPolicy extends Policy{
 		Process process = null;
 		try {
 //			10x10
-//			String command = String.format(
-//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
-//					"/media/wuga/Storage/JAIR-18/plan.py",
-//					"/media/wuga/Storage/JAIR-18/weights/nav/10x10",
-//					"2",
-//					"Navigation",
-//					"Navigation10",
-//					"10",
-//					"2",
-//					"2",
-//					"-1",
-//					"1",
-//					"/media/wuga/Storage/JAIR-18/temp/state",
-//					"/media/wuga/Storage/JAIR-18/temp/action");
-			
 			String command = String.format(
 					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
 					"/media/wuga/Storage/JAIR-18/plan.py",
-					"/media/wuga/Storage/JAIR-18/weights/nav/8x8",
+					"/media/wuga/Storage/JAIR-18/weights/nav/10x10",
 					"2",
 					"Navigation",
-					"Navigation8",
+					"Navigation10",
 					"10",
 					"2",
 					"2",
@@ -134,6 +119,22 @@ public class TensorflowPolicy extends Policy{
 					"1",
 					"/media/wuga/Storage/JAIR-18/temp/state",
 					"/media/wuga/Storage/JAIR-18/temp/action");
+			
+//			8x8
+//			String command = String.format(
+//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
+//					"/media/wuga/Storage/JAIR-18/plan.py",
+//					"/media/wuga/Storage/JAIR-18/weights/nav/8x8",
+//					"2",
+//					"Navigation",
+//					"Navigation8",
+//					"10",
+//					"2",
+//					"2",
+//					"-1",
+//					"1",
+//					"/media/wuga/Storage/JAIR-18/temp/state",
+//					"/media/wuga/Storage/JAIR-18/temp/action");
 				
 			System.out.println(command);
 
