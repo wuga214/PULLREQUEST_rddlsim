@@ -25,6 +25,7 @@ import util.Permutation;
 
 public class TensorflowPolicy extends Policy{
 	public int MAX_CONCURRENT_ACTIONS = 20;
+	public String Python_Repo = "/media/wuga/Storage/JAIR-18/";
 	public TensorflowPolicy () { 
 		super();
 	}
@@ -57,8 +58,8 @@ public class TensorflowPolicy extends Policy{
 				current_state[i] = String.valueOf((Double) s.getPVariableAssign(new PVAR_NAME("TEMP"), terms));
 			}
 			
-			String outFile = "/media/wuga/Storage/JAIR-18/temp/state.csv";
-			String inFile = "/media/wuga/Storage/JAIR-18/temp/action.csv";
+			String outFile = Python_Repo + "temp/state.csv";
+			String inFile = Python_Repo + "temp/action.csv";
 			
 			double[] action_values = getActionFromPython(current_state, outFile, inFile);
 			System.out.println(action_values);
@@ -107,8 +108,8 @@ public class TensorflowPolicy extends Policy{
 //			HVAC 3
 //			String command = String.format(
 //					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
-//					"/media/wuga/Storage/JAIR-18/plan.py",
-//					"/media/wuga/Storage/JAIR-18/weights/hvac/hvac3",
+//					Python_Repo + "plan.py",
+//					Python_Repo + "weights/hvac/hvac3",
 //					"1",
 //					"HVAC",
 //					"HVAC3",
@@ -118,14 +119,14 @@ public class TensorflowPolicy extends Policy{
 //					"1000",
 //					"0",
 //					"10",
-//					"/media/wuga/Storage/JAIR-18/temp/state",
-//					"/media/wuga/Storage/JAIR-18/temp/action");
+//					Python_Repo + "temp/state",
+//					Python_Repo + "temp/action");
 			
 //			HVAC 6
 			String command = String.format(
 					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
-					"/media/wuga/Storage/JAIR-18/plan.py",
-					"/media/wuga/Storage/JAIR-18/weights/hvac/hvac6",
+					Python_Repo + "plan.py",
+					Python_Repo + "weights/hvac/hvac6",
 					"1",
 					"HVAC",
 					"HVAC6",
@@ -135,8 +136,8 @@ public class TensorflowPolicy extends Policy{
 					"1000",
 					"0",
 					"10",
-					"/media/wuga/Storage/JAIR-18/temp/state",
-					"/media/wuga/Storage/JAIR-18/temp/action");
+					Python_Repo + "temp/state",
+					Python_Repo + "temp/action");
 				
 			System.out.println(command);
 
