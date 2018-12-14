@@ -24,6 +24,7 @@ import rddl.policy.Policy;
 import util.Permutation;
 
 public class TensorflowPolicy extends Policy{
+	public int Horizon = 20;
 	public int MAX_CONCURRENT_ACTIONS = 20;
 	public String Python_Repo = "/media/wuga/Storage/JAIR-18/";
 	public TensorflowPolicy () { 
@@ -69,6 +70,7 @@ public class TensorflowPolicy extends Policy{
 				actions.add(new PVAR_INST_DEF(p._sPVarName, action_values[i], terms));
 			}
 		}
+		Horizon = Horizon - 1;
 		return actions;
 	}
 	
@@ -106,38 +108,38 @@ public class TensorflowPolicy extends Policy{
 		Process process = null;
 		try {
 //			HVAC 3
-//			String command = String.format(
-//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
-//					Python_Repo + "plan.py",
-//					Python_Repo + "weights/hvac/hvac3",
-//					"1",
-//					"HVAC",
-//					"HVAC3",
-//					"20",
-//					"3",
-//					"3",
-//					"1000",
-//					"0",
-//					"10",
-//					Python_Repo + "temp/state",
-//					Python_Repo + "temp/action");
-			
-//			HVAC 6
 			String command = String.format(
 					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
 					Python_Repo + "plan.py",
-					Python_Repo + "weights/hvac/hvac6",
+					Python_Repo + "weights/hvac/hvac3",
 					"1",
 					"HVAC",
-					"HVAC6",
-					"20",
-					"6",
-					"6",
-					"1000",
+					"HVAC3",
+					Horizon,
+					"3",
+					"3",
+					Horizon*100,
 					"0",
 					"10",
 					Python_Repo + "temp/state",
 					Python_Repo + "temp/action");
+			
+//			HVAC 6
+//			String command = String.format(
+//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
+//					Python_Repo + "plan.py",
+//					Python_Repo + "weights/hvac/hvac6",
+//					"1",
+//					"HVAC",
+//					"HVAC6",
+//					"20",
+//					"6",
+//					"6",
+//					Horizon*100,
+//					"0",
+//					"10",
+//					Python_Repo + "temp/state",
+//					Python_Repo + "temp/action");
 				
 			System.out.println(command);
 
