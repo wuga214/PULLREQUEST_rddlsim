@@ -15,7 +15,7 @@ import rddl.policy.Policy;
 import util.Permutation;
 
 public class HVACPolicy_VAV extends Policy{
-	public int MAX_CONCURRENT_ACTIONS = 20;
+	public int MAX_CONCURRENT_ACTIONS = 60;
 	public HVACPolicy_VAV () { 
 		super();
 	}

@@ -1,0 +1,439 @@
+
+*********************************************************
+>>> ROUND INIT 1/1; time remaining = 1.7976931348623157E308, horizon = 10
+*********************************************************
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 10 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 87.094
+[D@49097b5d
+
+============================
+TIME = 0
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 15.234462039439645
+- derived: vaporated[$t2] := 11.207859935519942
+- derived: vaporated[$t3] := 11.207859935519942
+- derived: vaporated[$t4] := 11.207859935519942
+- derived: vaporated[$t5] := 11.207859935519942
+- derived: vaporated[$t6] := 11.207859935519942
+- derived: vaporated[$t7] := 11.207859935519942
+- derived: vaporated[$t8] := 11.207859935519942
+- derived: vaporated[$t9] := 11.207859935519942
+- derived: vaporated[$t10] := 11.207859935519942
+flow
+- action: flow[$t1] := 10.195899963378906
+- action: flow[$t2] := 38.57109832763672
+- action: flow[$t3] := 6.6427998542785645
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 0.013299999758601189
+- action: flow[$t6] := 8.3927001953125
+- action: flow[$t7] := 29.724199295043945
+- action: flow[$t8] := 28.700899124145508
+- action: flow[$t9] := 26.0447998046875
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 175.0
+- states: rlevel[$t2] := 150.0
+- states: rlevel[$t3] := 150.0
+- states: rlevel[$t4] := 150.0
+- states: rlevel[$t5] := 150.0
+- states: rlevel[$t6] := 150.0
+- states: rlevel[$t7] := 150.0
+- states: rlevel[$t8] := 150.0
+- states: rlevel[$t9] := 150.0
+- states: rlevel[$t10] := 150.0
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 9 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 80.085
+[D@6e2c634b
+
+============================
+TIME = 1
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 13.480540772335605
+- derived: vaporated[$t2] := 7.232611210095217
+- derived: vaporated[$t3] := 18.077085802936498
+- derived: vaporated[$t4] := 15.309893002089456
+- derived: vaporated[$t5] := 17.47155476857425
+- derived: vaporated[$t6] := 9.825508150402076
+- derived: vaporated[$t7] := 11.5771512358179
+- derived: vaporated[$t8] := 11.93609623509392
+- derived: vaporated[$t9] := 9.459011781437892
+- derived: vaporated[$t10] := 18.552888311346912
+flow
+- action: flow[$t1] := 10.37660026550293
+- action: flow[$t2] := 28.10110092163086
+- action: flow[$t3] := 10.285300254821777
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 1.8920999765396118
+- action: flow[$t6] := 2.0713999271392822
+- action: flow[$t7] := 29.03380012512207
+- action: flow[$t8] := 28.967899322509766
+- action: flow[$t9] := 23.459400177001953
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 164.56963799718145
+- states: rlevel[$t2] := 120.41694170022225
+- states: rlevel[$t3] := 190.72043853783822
+- states: rlevel[$t4] := 175.43493991875863
+- states: rlevel[$t5] := 187.47973918886697
+- states: rlevel[$t6] := 140.41273986892617
+- states: rlevel[$t7] := 152.46064096474862
+- states: rlevel[$t8] := 154.8154402353785
+- states: rlevel[$t9] := 137.76064025955117
+- states: rlevel[$t10] := 193.22964006448007
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 8 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 74.426
+[D@37a71e93
+
+============================
+TIME = 2
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 12.07425962710374
+- derived: vaporated[$t2] := 5.550585760279969
+- derived: vaporated[$t3] := 21.983399754334258
+- derived: vaporated[$t4] := 19.94799237024235
+- derived: vaporated[$t5] := 23.378096200531036
+- derived: vaporated[$t6] := 9.824837473362512
+- derived: vaporated[$t7] := 11.047804120146385
+- derived: vaporated[$t8] := 12.421553339943731
+- derived: vaporated[$t9] := 8.651891807346866
+- derived: vaporated[$t10] := 24.050206448830128
+flow
+- action: flow[$t1] := 8.84160041809082
+- action: flow[$t2] := 13.23960018157959
+- action: flow[$t3] := 11.571800231933594
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 1.5598000288009644
+- action: flow[$t6] := 1.1967999935150146
+- action: flow[$t7] := 28.409299850463867
+- action: flow[$t8] := 29.7101993560791
+- action: flow[$t9] := 20.5846004486084
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 155.7124969593429
+- states: rlevel[$t2] := 105.45982983399911
+- states: rlevel[$t3] := 210.4591534017108
+- states: rlevel[$t4] := 200.41034717149094
+- states: rlevel[$t5] := 217.08398376626286
+- states: rlevel[$t6] := 140.40793176792442
+- states: rlevel[$t7] := 148.92108953094794
+- states: rlevel[$t8] := 157.9452448028969
+- states: rlevel[$t9] := 131.73432827765095
+- states: rlevel[$t10] := 220.20755185727438
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 7 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 68.872
+[D@7e6cbb7a
+
+============================
+TIME = 3
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.177604085053797
+- derived: vaporated[$t2] := 5.555989144639313
+- derived: vaporated[$t3] := 21.9180039046436
+- derived: vaporated[$t4] := 24.447547672165264
+- derived: vaporated[$t5] := 28.96293100918093
+- derived: vaporated[$t6] := 9.90004589901287
+- derived: vaporated[$t7] := 10.571058348480195
+- derived: vaporated[$t8] := 12.622456698475634
+- derived: vaporated[$t9] := 8.30483777988575
+- derived: vaporated[$t10] := 28.041075064691256
+flow
+- action: flow[$t1] := 4.760200023651123
+- action: flow[$t2] := 9.132599830627441
+- action: flow[$t3] := 6.922299861907959
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 1.1450999975204468
+- action: flow[$t6] := 0.7645999789237976
+- action: flow[$t7] := 27.679100036621094
+- action: flow[$t8] := 30.938199996948242
+- action: flow[$t9] := 16.782100677490234
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 149.79663691414834
+- states: rlevel[$t2] := 105.51124431023037
+- states: rlevel[$t3] := 210.14355359702256
+- states: rlevel[$t4] := 222.03415503318217
+- states: rlevel[$t5] := 241.85628689300995
+- states: rlevel[$t6] := 140.94609432984785
+- states: rlevel[$t7] := 145.6607855538527
+- states: rlevel[$t8] := 159.22279195733793
+- states: rlevel[$t9] := 129.05763605049665
+- states: rlevel[$t10] := 237.93874585056767
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 6 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 61.878
+[D@7c3df479
+
+============================
+TIME = 4
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.038603100283575
+- derived: vaporated[$t2] := 5.563519435901018
+- derived: vaporated[$t3] := 21.9785676997241
+- derived: vaporated[$t4] := 27.245873639901927
+- derived: vaporated[$t5] := 34.106655837413605
+- derived: vaporated[$t6] := 9.967429399095886
+- derived: vaporated[$t7] := 10.214590794318523
+- derived: vaporated[$t8] := 12.483655483605114
+- derived: vaporated[$t9] := 8.44119485346382
+- derived: vaporated[$t10] := 30.30290053671088
+flow
+- action: flow[$t1] := 4.4029998779296875
+- action: flow[$t2] := 8.788800239562988
+- action: flow[$t3] := 6.679800033569336
+- action: flow[$t4] := 0.0010000000474974513
+- action: flow[$t5] := 0.9814000129699707
+- action: flow[$t6] := 0.6204000115394592
+- action: flow[$t7] := 27.409500122070312
+- action: flow[$t8] := 32.677799224853516
+- action: flow[$t9] := 15.548500061035156
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 148.85883280544343
+- states: rlevel[$t2] := 105.58285535861474
+- states: rlevel[$t3] := 210.43584966109844
+- states: rlevel[$t4] := 234.50890722292488
+- states: rlevel[$t5] := 262.6864558832568
+- states: rlevel[$t6] := 141.42654844943164
+- states: rlevel[$t7] := 143.1752271476752
+- states: rlevel[$t8] := 158.34123529853514
+- states: rlevel[$t9] := 130.1157975906411
+- states: rlevel[$t10] := 247.44437144229045
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 5 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 56.196
+[D@7106e68e
+
+============================
+TIME = 5
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 10.97344669686061
+- derived: vaporated[$t2] := 5.568851799242183
+- derived: vaporated[$t3] := 22.005619692906393
+- derived: vaporated[$t4] := 29.459589490050067
+- derived: vaporated[$t5] := 38.76542556396786
+- derived: vaporated[$t6] := 10.022796085328613
+- derived: vaporated[$t7] := 9.931635864375675
+- derived: vaporated[$t8] := 12.055235509732272
+- derived: vaporated[$t9] := 8.700836106832249
+- derived: vaporated[$t10] := 31.741063300828674
+flow
+- action: flow[$t1] := 4.357100009918213
+- action: flow[$t2] := 8.893799781799316
+- action: flow[$t3] := 6.88040018081665
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 1.3842999935150146
+- action: flow[$t6] := 0.9848999977111816
+- action: flow[$t7] := 23.391000747680664
+- action: flow[$t8] := 35.58829879760742
+- action: flow[$t9] := 15.319700241088867
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 148.41722982723016
+- states: rlevel[$t2] := 105.63353556108042
+- states: rlevel[$t3] := 210.566282167368
+- states: rlevel[$t4] := 243.9418336165448
+- states: rlevel[$t5] := 280.27719925777427
+- states: rlevel[$t6] := 141.82011905176626
+- states: rlevel[$t7] := 141.17153624282582
+- states: rlevel[$t8] := 155.58928071214683
+- states: rlevel[$t9] := 132.1075026891121
+- states: rlevel[$t10] := 253.3103709781542
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 4 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 50.231
+[D@7eda2dbb
+
+============================
+TIME = 6
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 10.924800925167563
+- derived: vaporated[$t2] := 5.5577489588610725
+- derived: vaporated[$t3] := 22.007233777164455
+- derived: vaporated[$t4] := 31.25996269861617
+- derived: vaporated[$t5] := 43.08942953351077
+- derived: vaporated[$t6] := 10.07591804899763
+- derived: vaporated[$t7] := 10.308451163220603
+- derived: vaporated[$t8] := 10.669047814126316
+- derived: vaporated[$t9] := 9.014037228080573
+- derived: vaporated[$t10] := 32.882190305286265
+flow
+- action: flow[$t1] := 4.300600051879883
+- action: flow[$t2] := 9.057000160217285
+- action: flow[$t3] := 8.16100025177002
+- action: flow[$t4] := 0.0017000000225380063
+- action: flow[$t5] := 2.4681999683380127
+- action: flow[$t6] := 2.1368000507354736
+- action: flow[$t7] := 24.908700942993164
+- action: flow[$t8] := 35.23550033569336
+- action: flow[$t9] := 14.94279956817627
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 148.08668312045134
+- states: rlevel[$t2] := 105.52798398995714
+- states: rlevel[$t3] := 210.57406207544426
+- states: rlevel[$t4] := 251.36264430731143
+- states: rlevel[$t5] := 295.7157724978988
+- states: rlevel[$t6] := 142.19672296224147
+- states: rlevel[$t7] := 143.83379962848068
+- states: rlevel[$t8] := 146.3367471524878
+- states: rlevel[$t9] := 134.471266334706
+- states: rlevel[$t10] := 257.8739079161256
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 3 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 42.792
+[D@6576fe71
+
+============================
+TIME = 7
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 10.891690484806325
+- derived: vaporated[$t2] := 5.524769195691411
+- derived: vaporated[$t3] := 21.777274139483662
+- derived: vaporated[$t4] := 32.98012754458812
+- derived: vaporated[$t5] := 45.91164692551011
+- derived: vaporated[$t6] := 10.112034226836862
+- derived: vaporated[$t7] := 10.584464467871054
+- derived: vaporated[$t8] := 9.815489634195783
+- derived: vaporated[$t9] := 9.489424152316719
+- derived: vaporated[$t10] := 33.94894108841789
+flow
+- action: flow[$t1] := 4.247399806976318
+- action: flow[$t2] := 8.94909954071045
+- action: flow[$t3] := 8.297699928283691
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 4.315899848937988
+- action: flow[$t6] := 4.139500141143799
+- action: flow[$t7] := 29.475200653076172
+- action: flow[$t8] := 36.29410171508789
+- action: flow[$t9] := 15.49209976196289
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 147.86128214340388
+- states: rlevel[$t2] := 105.21383492275866
+- states: rlevel[$t3] := 209.46282820672707
+- states: rlevel[$t4] := 258.26198186044275
+- states: rlevel[$t5] := 305.3953433317659
+- states: rlevel[$t6] := 142.45220483084637
+- states: rlevel[$t7] := 145.75344757300238
+- states: rlevel[$t8] := 140.34089994566128
+- states: rlevel[$t9] := 137.98262950678716
+- states: rlevel[$t10] := 262.07131722975106
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 2 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 35.875
+[D@76fb509a
+
+============================
+TIME = 8
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 10.87128351099548
+- derived: vaporated[$t2] := 5.501054742864354
+- derived: vaporated[$t3] := 21.545489154859524
+- derived: vaporated[$t4] := 34.33626377680483
+- derived: vaporated[$t5] := 47.723831085823775
+- derived: vaporated[$t6] := 10.121143334287279
+- derived: vaporated[$t7] := 10.451709888814884
+- derived: vaporated[$t8] := 9.588930997807207
+- derived: vaporated[$t9] := 10.092913807117977
+- derived: vaporated[$t10] := 35.41931436907672
+flow
+- action: flow[$t1] := 4.223599910736084
+- action: flow[$t2] := 9.155400276184082
+- action: flow[$t3] := 8.678999900817871
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 6.642899990081787
+- action: flow[$t6] := 6.690700054168701
+- action: flow[$t7] := 33.41230010986328
+- action: flow[$t8] := 40.505001068115234
+- action: flow[$t9] := 40.41339874267578
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 147.72219185162123
+- states: rlevel[$t2] := 104.98736599333313
+- states: rlevel[$t3] := 208.33695367967016
+- states: rlevel[$t4] := 263.5795542441383
+- states: rlevel[$t5] := 311.4618982724057
+- states: rlevel[$t6] := 142.5165703118037
+- states: rlevel[$t7] := 144.83328259319896
+- states: rlevel[$t8] := 138.70650924945377
+- states: rlevel[$t9] := 142.31700544144553
+- states: rlevel[$t10] := 267.75397604443987
+
+Legal instances for flow: [[$t1], [$t2], [$t3], [$t4], [$t5], [$t6], [$t7], [$t8], [$t9], [$t10]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/reservoir/reservoir10 -l 2 -d Reservoir -i Reservoir10 -hz 1 -a 10 -s 10 -e 4000 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 27.415
+[D@300ffa5d
+
+============================
+TIME = 9
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 10.857373315211237
+- derived: vaporated[$t2] := 5.4558699083146935
+- derived: vaporated[$t3] := 21.326517357625775
+- derived: vaporated[$t4] := 35.463323154217086
+- derived: vaporated[$t5] := 49.59130536309128
+- derived: vaporated[$t6] := 10.097242845138524
+- derived: vaporated[$t7] := 10.141452461288004
+- derived: vaporated[$t8] := 9.35855845707956
+- derived: vaporated[$t9] := 7.601052737378678
+- derived: vaporated[$t10] := 44.16481979503995
+flow
+- action: flow[$t1] := 4.959499835968018
+- action: flow[$t2] := 4.932300090789795
+- action: flow[$t3] := 4.973100185394287
+- action: flow[$t4] := 5.010799884796143
+- action: flow[$t5] := 5.02839994430542
+- action: flow[$t6] := 5.000999927520752
+- action: flow[$t7] := 5.015699863433838
+- action: flow[$t8] := 4.971099853515625
+- action: flow[$t9] := 5.089600086212158
+- action: flow[$t10] := 4.993599891662598
+rlevel
+- states: rlevel[$t1] := 147.62730842988967
+- states: rlevel[$t2] := 104.55451088502078
+- states: rlevel[$t3] := 207.26786490017685
+- states: rlevel[$t4] := 267.9222903681514
+- states: rlevel[$t5] := 317.6001682646154
+- states: rlevel[$t6] := 142.3476269134295
+- states: rlevel[$t7] := 142.6599726486895
+- states: rlevel[$t8] := 137.0248772933946
+- states: rlevel[$t9] := 123.45359288173356
+- states: rlevel[$t10] := 299.4387604722076
+
+
+*********************************************************
+>>> ROUND END, reward = -2979.0426563523706
+*********************************************************
+==> Objective value = -2979.043, rewards: [-548.0500027969618, -429.4695352241428, -360.80100900688655, -315.3473509707985, -276.7266173663717, -240.95904163211824, -212.72500499339088, -192.48439812849495, -170.1182260669292, -232.3614701662757]

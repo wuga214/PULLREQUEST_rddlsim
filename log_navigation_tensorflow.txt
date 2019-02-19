@@ -1,0 +1,469 @@
+
+*********************************************************
+>>> ROUND INIT 1/1; time remaining = 1.7976931348623157E308, horizon = 20
+*********************************************************
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 20 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 9.602
+[D@49097b5d
+
+============================
+TIME = 0
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099985572927355
+distance
+- derived: distance := 7.0710678118654755
+proposedLoc
+- derived: proposedLoc[$x] := -4.495000721353632
+- derived: proposedLoc[$y] := -4.495000721353632
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -5.0
+- states: location[$y] := -5.0
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 19 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 8.916
+[D@6e2c634b
+
+============================
+TIME = 1
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099939812911285
+distance
+- derived: distance := 6.356890983015152
+proposedLoc
+- derived: proposedLoc[$x] := -3.990003730708068
+- derived: proposedLoc[$y] := -3.990003730708068
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -4.495000721353632
+- states: location[$y] := -4.495000721353632
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 18 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 8.783
+[D@37a71e93
+
+============================
+TIME = 2
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099748914003155
+distance
+- derived: distance := 5.642717389886596
+proposedLoc
+- derived: proposedLoc[$x] := -3.4850162850079105
+- derived: proposedLoc[$y] := -3.4850162850079105
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -3.990003730708068
+- states: location[$y] := -3.990003730708068
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 17 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 8.598
+[D@7e6cbb7a
+
+============================
+TIME = 3
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0098952589853685
+distance
+- derived: distance := 4.928557295349287
+proposedLoc
+- derived: proposedLoc[$x] := -2.9800686555152263
+- derived: proposedLoc[$y] := -2.9826943975389444
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.4973999857902527
+location
+- states: location[$x] := -3.4850162850079105
+- states: location[$y] := -3.4850162850079105
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 16 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 8.501
+[D@7c3df479
+
+============================
+TIME = 4
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0095647942466268
+distance
+- derived: distance := 4.216310598223823
+proposedLoc
+- derived: proposedLoc[$x] := -2.475286258391913
+- derived: proposedLoc[$y] := -2.477912000415631
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -2.9800686555152263
+- states: location[$y] := -2.9826943975389444
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 15 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 8.006
+[D@7106e68e
+
+============================
+TIME = 5
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0081867618314266
+distance
+- derived: distance := 3.502440569486887
+proposedLoc
+- derived: proposedLoc[$x] := -1.9711928774761995
+- derived: proposedLoc[$y] := -1.9740202602655446
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.4997999966144562
+location
+- states: location[$x] := -2.475286258391913
+- states: location[$y] := -2.477912000415631
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 14 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 7.713
+[D@7eda2dbb
+
+============================
+TIME = 6
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0024785473918383
+distance
+- derived: distance := 2.789687679320348
+proposedLoc
+- derived: proposedLoc[$x] := -1.4699536037802803
+- derived: proposedLoc[$y] := -1.4741844504173305
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.4986000061035156
+location
+- states: location[$x] := -1.9711928774761995
+- states: location[$y] := -1.9740202602655446
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 13 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 7.493
+[D@6576fe71
+
+============================
+TIME = 7
+============================
+===
+scalefactor
+- derived: scalefactor := 0.9793746809845254
+distance
+- derived: distance := 2.0818221324404442
+proposedLoc
+- derived: proposedLoc[$x] := -0.9802662632880176
+- derived: proposedLoc[$y] := -1.3347214992542504
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.14239999651908875
+location
+- states: location[$x] := -1.4699536037802803
+- states: location[$y] := -1.4741844504173305
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 12 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 7.34
+[D@76fb509a
+
+============================
+TIME = 8
+============================
+===
+scalefactor
+- derived: scalefactor := 0.9396791522521728
+distance
+- derived: distance := 1.6560203584232192
+proposedLoc
+- derived: proposedLoc[$x] := -0.5104266871619312
+- derived: proposedLoc[$y] := -1.3951428693713686
+move
+- action: move[$x] := 0.5
+- action: move[$y] := -0.06430000066757202
+location
+- states: location[$x] := -0.9802662632880176
+- states: location[$y] := -1.3347214992542504
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 11 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 7.034
+[D@300ffa5d
+
+============================
+TIME = 9
+============================
+===
+scalefactor
+- derived: scalefactor := 0.9125088805984747
+distance
+- derived: distance := 1.4855837333940083
+proposedLoc
+- derived: proposedLoc[$x] := -0.05417224686269384
+- derived: proposedLoc[$y] := -1.0655446573045062
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.3612000048160553
+location
+- states: location[$x] := -0.5104266871619312
+- states: location[$y] := -1.3951428693713686
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 10 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 6.649
+[D@1f17ae12
+
+============================
+TIME = 10
+============================
+===
+scalefactor
+- derived: scalefactor := 0.7982983159294312
+distance
+- derived: distance := 1.0669208260411502
+proposedLoc
+- derived: proposedLoc[$x] := 0.3449769111020218
+- derived: proposedLoc[$y] := -0.6663954993397906
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.05417224686269384
+- states: location[$y] := -1.0655446573045062
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 9 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 6.229
+[D@4d405ef7
+
+============================
+TIME = 11
+============================
+===
+scalefactor
+- derived: scalefactor := 0.6453842962252698
+distance
+- derived: distance := 0.7503945833585295
+proposedLoc
+- derived: proposedLoc[$x] := 0.6676690592146567
+- derived: proposedLoc[$y] := -0.3437033512271557
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.3449769111020218
+- states: location[$y] := -0.6663954993397906
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 8 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 6.04
+[D@6193b845
+
+============================
+TIME = 12
+============================
+===
+scalefactor
+- derived: scalefactor := 0.6457106313218439
+distance
+- derived: distance := 0.7509420525429125
+proposedLoc
+- derived: proposedLoc[$x] := 0.9905243748755787
+- derived: proposedLoc[$y] := -0.020848035566233714
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.6676690592146567
+- states: location[$y] := -0.3437033512271557
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 7 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 5.704
+[D@2e817b38
+
+============================
+TIME = 13
+============================
+===
+scalefactor
+- derived: scalefactor := 0.7676792822610747
+distance
+- derived: distance := 0.9907437498211265
+proposedLoc
+- derived: proposedLoc[$x] := 1.374364016006116
+- derived: proposedLoc[$y] := 0.36299160556430365
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.9905243748755787
+- states: location[$y] := -0.020848035566233714
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 6 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 5.445
+[D@c4437c4
+
+============================
+TIME = 14
+============================
+===
+scalefactor
+- derived: scalefactor := 0.8999097522393382
+distance
+- derived: distance := 1.4214919465838032
+proposedLoc
+- derived: proposedLoc[$x] := 1.8243188921257851
+- derived: proposedLoc[$y] := 0.8129464816839728
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 1.374364016006116
+- states: location[$y] := 0.36299160556430365
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 5 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 5.109
+[D@433c675d
+
+============================
+TIME = 15
+============================
+===
+scalefactor
+- derived: scalefactor := 0.9738330204379666
+distance
+- derived: distance := 1.9972534646983096
+proposedLoc
+- derived: proposedLoc[$x] := 2.3112354023447685
+- derived: proposedLoc[$y] := 1.299862991902956
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 1.8243188921257851
+- states: location[$y] := 0.8129464816839728
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 4 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 4.823
+[D@3f91beef
+
+============================
+TIME = 16
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0000997237709135
+distance
+- derived: distance := 2.651688685115711
+proposedLoc
+- derived: proposedLoc[$x] := 2.806984837134795
+- derived: proposedLoc[$y] := 1.7999128537884128
+move
+- action: move[$x] := 0.49570000171661377
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 2.3112354023447685
+- states: location[$y] := 1.299862991902956
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 3 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 4.406
+[D@1a6c5a9e
+
+============================
+TIME = 17
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0074638540009555
+distance
+- derived: distance := 3.3344939881693296
+proposedLoc
+- derived: proposedLoc[$x] := 2.997194019928079
+- derived: proposedLoc[$y] := 2.3036447807888907
+move
+- action: move[$x] := 0.18880000710487366
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 2.806984837134795
+- states: location[$y] := 1.7999128537884128
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 2 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 4.102
+[D@37bba400
+
+============================
+TIME = 18
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0089592188302277
+distance
+- derived: distance := 3.7802051887627126
+proposedLoc
+- derived: proposedLoc[$x] := 2.9925528074184724
+- derived: proposedLoc[$y] := 2.8081243902040045
+move
+- action: move[$x] := -0.004600000102072954
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 2.997194019928079
+- states: location[$y] := 2.3036447807888907
+
+Legal instances for move: [[$x], [$y]]
+python /media/wuga/Storage/JAIR-18/plan.py -w /media/wuga/Storage/JAIR-18/weights/nav/10x10 -l 2 -d Navigation -i Navigation10 -hz 1 -a 2 -s 2 -e 400 --constraint -0.5 0.5 --get_state /media/wuga/Storage/JAIR-18/temp/state --send_action /media/wuga/Storage/JAIR-18/temp/action
+Took : 3.579
+[D@179d3b25
+
+============================
+TIME = 19
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0094549685185592
+distance
+- derived: distance := 4.10377081426909
+proposedLoc
+- derived: proposedLoc[$x] := 3.497280291677752
+- derived: proposedLoc[$y] := 3.312851874463284
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 2.9925528074184724
+- states: location[$y] := 2.8081243902040045
+
+
+*********************************************************
+>>> ROUND END, reward = -152.41927166323342
+*********************************************************
+==> Objective value = -152.419, rewards: [-16.0, -14.990001442707264, -13.980007461416136, -12.970032570015821, -11.962763053054172, -10.953198258807543, -9.945213137741744, -8.94413805419761, -8.314987762542268, -7.905569556533299, -7.1197169041672, -6.321418588237769, -5.676034292012499, -5.030323660690655, -4.262644378429581, -3.362734626190242, -2.3889016057522756, -1.393102309076792, -0.6991611992830302, -0.1993228023775231]

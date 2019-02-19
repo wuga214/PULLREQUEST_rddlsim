@@ -24,7 +24,7 @@ import rddl.policy.Policy;
 import util.Permutation;
 
 public class TensorflowPolicy extends Policy{
-	public int Horizon = 20;
+	public int Horizon = 10;
 	public int MAX_CONCURRENT_ACTIONS = 20;
 	public String Python_Repo = "/media/wuga/Storage/JAIR-18/";
 	public TensorflowPolicy () { 
@@ -82,7 +82,11 @@ public class TensorflowPolicy extends Policy{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		long start = System.currentTimeMillis();
 		runPythonCommand();
+		long end = System.currentTimeMillis();
+
+		System.out.println("Took : " + ((end - start) / 1000.0));
 		
 		try (BufferedReader reader = new BufferedReader(
 				new FileReader(inFile))) {
@@ -123,17 +127,32 @@ public class TensorflowPolicy extends Policy{
 //					Python_Repo + "temp/action");
 			
 //			Reservoir 4
+//			String command = String.format(
+//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --get_state %s --send_action %s",
+//					Python_Repo + "plan.py",
+//					Python_Repo + "weights/reservoir/reservoir4",
+//					"1",
+//					"Reservoir",
+//					"Reservoir4",
+//					Horizon,
+//					"4",
+//					"4",
+//					"1000",
+//					Python_Repo + "temp/state",
+//					Python_Repo + "temp/action");
+			
+//			Reservoir 10
 			String command = String.format(
 					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --get_state %s --send_action %s",
 					Python_Repo + "plan.py",
-					Python_Repo + "weights/reservoir/reservoir4",
-					"1",
+					Python_Repo + "weights/reservoir/reservoir10",
+					"2",
 					"Reservoir",
-					"Reservoir4",
+					"Reservoir10",
 					Horizon,
-					"4",
-					"4",
-					"1000",
+					"10",
+					"10",
+					"4000",
 					Python_Repo + "temp/state",
 					Python_Repo + "temp/action");
 				

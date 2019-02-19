@@ -1,0 +1,409 @@
+
+*********************************************************
+>>> ROUND INIT 1/1; time remaining = 1.7976931348623157E308, horizon = 10
+*********************************************************
+**Action: [flow($t6) = 9.576549808241538;, flow($t9) = 0.8907037455341545;, flow($t10) = 1.830474427665922;, flow($t1) = 25.052086343633306;, flow($t8) = 11.229176800876003;, flow($t2) = 44.774296237476214;, flow($t7) = 53.43569201971191;, flow($t3) = 0.28878682590858973;, flow($t5) = 1.274763587510341;]
+
+============================
+TIME = 0
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 15.234462039439645
+- derived: vaporated[$t2] := 11.207859935519942
+- derived: vaporated[$t3] := 11.207859935519942
+- derived: vaporated[$t4] := 11.207859935519942
+- derived: vaporated[$t5] := 11.207859935519942
+- derived: vaporated[$t6] := 11.207859935519942
+- derived: vaporated[$t7] := 11.207859935519942
+- derived: vaporated[$t8] := 11.207859935519942
+- derived: vaporated[$t9] := 11.207859935519942
+- derived: vaporated[$t10] := 11.207859935519942
+flow
+- action: flow[$t1] := 25.052086343633306
+- action: flow[$t2] := 44.774296237476214
+- action: flow[$t3] := 0.28878682590858973
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 1.274763587510341
+- action: flow[$t6] := 9.576549808241538
+- action: flow[$t7] := 53.43569201971191
+- action: flow[$t8] := 11.229176800876003
+- action: flow[$t9] := 0.8907037455341545
+- action: flow[$t10] := 1.830474427665922
+rlevel
+- states: rlevel[$t1] := 175.0
+- states: rlevel[$t2] := 150.0
+- states: rlevel[$t3] := 150.0
+- states: rlevel[$t4] := 150.0
+- states: rlevel[$t5] := 150.0
+- states: rlevel[$t6] := 150.0
+- states: rlevel[$t7] := 150.0
+- states: rlevel[$t8] := 150.0
+- states: rlevel[$t9] := 150.0
+- states: rlevel[$t10] := 150.0
+
+**Action: [flow($t8) = 56.01549827650053;, flow($t10) = 0.9998452157102565;, flow($t4) = 1.5709434352972071;, flow($t2) = 22.99786461283487;, flow($t3) = 1.5100091756504797;, flow($t6) = 0.3928794897343711;, flow($t9) = 0.9525465159099734;, flow($t7) = 33.75115789385441;]
+
+============================
+TIME = 1
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.165239636399544
+- derived: vaporated[$t2] := 8.306415706268911
+- derived: vaporated[$t3] := 20.51890413638158
+- derived: vaporated[$t4] := 14.226169347563397
+- derived: vaporated[$t5] := 14.1702250646669
+- derived: vaporated[$t6] := 9.836337579160302
+- derived: vaporated[$t7] := 8.417560203719281
+- derived: vaporated[$t8] := 19.084993389068114
+- derived: vaporated[$t9] := 13.416451459514093
+- derived: vaporated[$t10] := 13.950828392778787
+flow
+- action: flow[$t1] := 0.0
+- action: flow[$t2] := 22.99786461283487
+- action: flow[$t3] := 1.5100091756504797
+- action: flow[$t4] := 1.5709434352972071
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.3928794897343711
+- action: flow[$t7] := 33.75115789385441
+- action: flow[$t8] := 56.01549827650053
+- action: flow[$t9] := 0.9525465159099734
+- action: flow[$t10] := 0.9998452157102565
+rlevel
+- states: rlevel[$t1] := 149.71345161692705
+- states: rlevel[$t2] := 129.06993017063715
+- states: rlevel[$t3] := 203.27764947604769
+- states: rlevel[$t4] := 169.08092689038867
+- states: rlevel[$t5] := 168.74655327784572
+- states: rlevel[$t6] := 140.49035384374886
+- states: rlevel[$t7] := 129.93299785300968
+- states: rlevel[$t8] := 195.998655283316
+- states: rlevel[$t9] := 164.17619990645625
+- states: rlevel[$t10] := 167.42891919058982
+
+**Action: [flow($t6) = 2.041564258175104;, flow($t4) = 0.12704994101645675;, flow($t1) = 2.778358579337591;, flow($t8) = 28.131488586201414;, flow($t3) = 17.192811458385314;, flow($t5) = 0.7398509984481969;, flow($t7) = 27.19476852456346;, flow($t2) = 2.6424587013156877;, flow($t9) = 0.3125992949332107;, flow($t10) = 0.14479361537769542;]
+
+============================
+TIME = 2
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.742258158103171
+- derived: vaporated[$t2] := 5.795484845249437
+- derived: vaporated[$t3] := 24.933070193444387
+- derived: vaporated[$t4] := 16.977366218164388
+- derived: vaporated[$t5] := 26.708330671940335
+- derived: vaporated[$t6] := 9.804372100098867
+- derived: vaporated[$t7] := 7.564685912932902
+- derived: vaporated[$t8] := 14.32151709803892
+- derived: vaporated[$t9] := 15.201084031709115
+- derived: vaporated[$t10] := 15.031372067575285
+flow
+- action: flow[$t1] := 2.778358579337591
+- action: flow[$t2] := 2.6424587013156877
+- action: flow[$t3] := 17.192811458385314
+- action: flow[$t4] := 0.12704994101645675
+- action: flow[$t5] := 0.7398509984481969
+- action: flow[$t6] := 2.041564258175104
+- action: flow[$t7] := 27.19476852456346
+- action: flow[$t8] := 28.131488586201414
+- action: flow[$t9] := 0.3125992949332107
+- action: flow[$t10] := 0.14479361537769542
+rlevel
+- states: rlevel[$t1] := 153.5482119805275
+- states: rlevel[$t2] := 107.76564985153335
+- states: rlevel[$t3] := 224.2466007768505
+- states: rlevel[$t4] := 184.79382328317854
+- states: rlevel[$t5] := 232.16276992497654
+- states: rlevel[$t6] := 140.26113677485418
+- states: rlevel[$t7] := 123.15715924517035
+- states: rlevel[$t8] := 169.64932151160178
+- states: rlevel[$t9] := 174.80720193103218
+- states: rlevel[$t10] := 173.82367158774514
+
+**Action: [flow($t6) = 0.6841416082857139;, flow($t7) = 30.14064274262442;, flow($t10) = 0.7026703080773133;, flow($t8) = 29.67910708009651;, flow($t1) = 4.268852783421416;, flow($t2) = 7.1323460357465;]
+
+============================
+TIME = 3
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.815401330447383
+- derived: vaporated[$t2] := 6.270730757438505
+- derived: vaporated[$t3] := 20.817790159132933
+- derived: vaporated[$t4] := 22.90992098967347
+- derived: vaporated[$t5] := 31.657507506661148
+- derived: vaporated[$t6] := 9.65084695168933
+- derived: vaporated[$t7] := 7.846888792911026
+- derived: vaporated[$t8] := 14.27815911533835
+- derived: vaporated[$t9] := 17.021158018304103
+- derived: vaporated[$t10] := 16.291505014817133
+flow
+- action: flow[$t1] := 4.268852783421416
+- action: flow[$t2] := 7.1323460357465
+- action: flow[$t3] := 0.0
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.6841416082857139
+- action: flow[$t7] := 30.14064274262442
+- action: flow[$t8] := 29.67910708009651
+- action: flow[$t9] := 0.0
+- action: flow[$t10] := 0.7026703080773133
+rlevel
+- states: rlevel[$t1] := 154.02759524308675
+- states: rlevel[$t2] := 112.10606488430582
+- states: rlevel[$t3] := 204.7631778263365
+- states: rlevel[$t4] := 214.88221858238302
+- states: rlevel[$t5] := 252.9731267818059
+- states: rlevel[$t6] := 139.1550514150284
+- states: rlevel[$t7] := 125.4392690658491
+- states: rlevel[$t8] := 169.39108435192492
+- states: rlevel[$t9] := 185.03336960283804
+- states: rlevel[$t10] := 181.00166945790048
+
+**Action: [flow($t3) = 0.005765452738520471;, flow($t1) = 0.4311535534416402;, flow($t8) = 30.360082771871596;, flow($t2) = 9.374242694384366;, flow($t9) = 3.3575834530284636;, flow($t10) = 0.35127788004911553;, flow($t7) = 28.199224317082905;, flow($t4) = 0.2381979856976489;]
+
+============================
+TIME = 4
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.650288596655395
+- derived: vaporated[$t2] := 6.367753332924081
+- derived: vaporated[$t3] := 22.11185278386611
+- derived: vaporated[$t4] := 24.434039893100138
+- derived: vaporated[$t5] := 36.27128818413925
+- derived: vaporated[$t6] := 9.604587079763588
+- derived: vaporated[$t7] := 7.562078573864695
+- derived: vaporated[$t8] := 14.477379525955005
+- derived: vaporated[$t9] := 18.51141887895821
+- derived: vaporated[$t10] := 16.95870203651476
+flow
+- action: flow[$t1] := 0.4311535534416402
+- action: flow[$t2] := 9.374242694384366
+- action: flow[$t3] := 0.005765452738520471
+- action: flow[$t4] := 0.2381979856976489
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.0
+- action: flow[$t7] := 28.199224317082905
+- action: flow[$t8] := 30.360082771871596
+- action: flow[$t9] := 3.3575834530284636
+- action: flow[$t10] := 0.35127788004911553
+rlevel
+- states: rlevel[$t1] := 152.94334112921797
+- states: rlevel[$t2] := 112.97184087454224
+- states: rlevel[$t3] := 211.07773370295007
+- states: rlevel[$t4] := 221.97229759270954
+- states: rlevel[$t5] := 270.99472635524126
+- states: rlevel[$t6] := 138.82006285505335
+- states: rlevel[$t7] := 123.13587913859936
+- states: rlevel[$t8] := 170.57446089911446
+- states: rlevel[$t9] := 193.01221158453393
+- states: rlevel[$t10] := 184.69163574329176
+
+**Action: [flow($t1) = 4.3320623463966905;, flow($t2) = 2.3435568917707417;, flow($t4) = 1.5575237691106525;, flow($t8) = 27.669435193287473;, flow($t7) = 26.959792947968026;, flow($t9) = 4.915807291446235;, flow($t3) = 8.762533042775493;]
+
+============================
+TIME = 5
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 12.097346600149448
+- derived: vaporated[$t2] := 5.784256046251469
+- derived: vaporated[$t3] := 23.64602860632762
+- derived: vaporated[$t4] := 25.6120784325785
+- derived: vaporated[$t5] := 40.1542068719557
+- derived: vaporated[$t6] := 9.659202902210273
+- derived: vaporated[$t7] := 7.469093552567575
+- derived: vaporated[$t8] := 14.201945492039915
+- derived: vaporated[$t9] := 19.11297406432013
+- derived: vaporated[$t10] := 18.080628301895878
+flow
+- action: flow[$t1] := 4.3320623463966905
+- action: flow[$t2] := 2.3435568917707417
+- action: flow[$t3] := 8.762533042775493
+- action: flow[$t4] := 1.5575237691106525
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.0
+- action: flow[$t7] := 26.959792947968026
+- action: flow[$t8] := 27.669435193287473
+- action: flow[$t9] := 4.915807291446235
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 155.86189897912092
+- states: rlevel[$t2] := 107.66099840067544
+- states: rlevel[$t3] := 218.3343581607298
+- states: rlevel[$t4] := 227.3058251666503
+- states: rlevel[$t5] := 285.32171892867126
+- states: rlevel[$t6] := 139.21547577528978
+- states: rlevel[$t7] := 122.37457624765177
+- states: rlevel[$t8] := 168.93622291837076
+- states: rlevel[$t9] := 196.14320925254725
+- states: rlevel[$t10] := 190.73923927975636
+
+**Action: [flow($t1) = 4.911035387559508;, flow($t8) = 29.84429738701009;, flow($t2) = 9.231409537609334;, flow($t4) = 0.13686373077088512;, flow($t9) = 7.303196487711261;, flow($t6) = 0.2925120581147371;, flow($t7) = 29.844703715203053;]
+
+============================
+TIME = 6
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.877354013080684
+- derived: vaporated[$t2] := 6.468648168753837
+- derived: vaporated[$t3] := 21.531610806497625
+- derived: vaporated[$t4] := 28.26564106181906
+- derived: vaporated[$t5] := 42.71081247768873
+- derived: vaporated[$t6] := 9.706398019593134
+- derived: vaporated[$t7] := 7.538795477774711
+- derived: vaporated[$t8] := 14.216743538073779
+- derived: vaporated[$t9] := 19.301489606553588
+- derived: vaporated[$t10] := 19.391091152115056
+flow
+- action: flow[$t1] := 4.911035387559508
+- action: flow[$t2] := 9.231409537609334
+- action: flow[$t3] := 0.0
+- action: flow[$t4] := 0.13686373077088512
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.2925120581147371
+- action: flow[$t7] := 29.844703715203053
+- action: flow[$t8] := 29.84429738701009
+- action: flow[$t9] := 7.303196487711261
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 154.43249003257478
+- states: rlevel[$t2] := 113.86524780904992
+- states: rlevel[$t3] := 208.26935340339742
+- states: rlevel[$t4] := 238.8987560077366
+- states: rlevel[$t5] := 294.39447101911367
+- states: rlevel[$t6] := 139.5562728730795
+- states: rlevel[$t7] := 122.94568974711615
+- states: rlevel[$t8] := 169.02463518101138
+- states: rlevel[$t9] := 197.11442789678088
+- states: rlevel[$t10] := 197.57441826930673
+
+**Action: [flow($t9) = 6.388499369556402;, flow($t3) = 6.799516764272428;, flow($t7) = 25.52045083384076;, flow($t2) = 8.082663004989545;, flow($t8) = 30.820800626590216;, flow($t1) = 3.111382227658245;]
+
+============================
+TIME = 7
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.604921713377465
+- derived: vaporated[$t2] := 6.379501113837958
+- derived: vaporated[$t3] := 23.140464746563477
+- derived: vaporated[$t4] := 28.64125467938896
+- derived: vaporated[$t5] := 44.813856404287336
+- derived: vaporated[$t6] := 9.706549139643375
+- derived: vaporated[$t7] := 7.285164956642074
+- derived: vaporated[$t8] := 14.348241436073145
+- derived: vaporated[$t9] := 18.990505501575793
+- derived: vaporated[$t10] := 21.023396810545528
+flow
+- action: flow[$t1] := 3.111382227658245
+- action: flow[$t2] := 8.082663004989545
+- action: flow[$t3] := 6.799516764272428
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.0
+- action: flow[$t7] := 25.52045083384076
+- action: flow[$t8] := 30.820800626590216
+- action: flow[$t9] := 6.388499369556402
+- action: flow[$t10] := 0.0
+rlevel
+- states: rlevel[$t1] := 152.64410063193458
+- states: rlevel[$t2] := 113.07622549024626
+- states: rlevel[$t3] := 215.96915213450913
+- states: rlevel[$t4] := 240.49625121514666
+- states: rlevel[$t5] := 301.66481965920593
+- states: rlevel[$t6] := 139.55736279537163
+- states: rlevel[$t7] := 120.85470261225313
+- states: rlevel[$t8] := 169.80829797113054
+- states: rlevel[$t9] := 195.50974180251603
+- states: rlevel[$t10] := 205.77903566301768
+
+**Action: [flow($t3) = 3.6871778218896436;, flow($t8) = 24.633499814092783;, flow($t1) = 2.6822295859318643;, flow($t10) = 0.38137760300845847;, flow($t9) = 5.429623896758702;, flow($t7) = 29.499824397426988;, flow($t6) = 1.202245869022168;, flow($t2) = 3.68587848564544;]
+
+============================
+TIME = 8
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.647929801081105
+- derived: vaporated[$t2] := 6.228310919304633
+- derived: vaporated[$t3] := 22.747201239397715
+- derived: vaporated[$t4] := 30.596947425952173
+- derived: vaporated[$t5] := 46.58774374579672
+- derived: vaporated[$t6] := 9.747279103065898
+- derived: vaporated[$t7] := 7.551448988650432
+- derived: vaporated[$t8] := 13.576942673061792
+- derived: vaporated[$t9] := 18.91741687071654
+- derived: vaporated[$t10] := 22.12566393788335
+flow
+- action: flow[$t1] := 2.6822295859318643
+- action: flow[$t2] := 3.68587848564544
+- action: flow[$t3] := 3.6871778218896436
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 1.202245869022168
+- action: flow[$t7] := 29.499824397426988
+- action: flow[$t8] := 24.633499814092783
+- action: flow[$t9] := 5.429623896758702
+- action: flow[$t10] := 0.38137760300845847
+rlevel
+- states: rlevel[$t1] := 152.92779669089887
+- states: rlevel[$t2] := 111.725443599077
+- states: rlevel[$t3] := 214.11183362866277
+- states: rlevel[$t4] := 248.65451330003015
+- states: rlevel[$t5] := 307.6717638815088
+- states: rlevel[$t6] := 139.85081365572825
+- states: rlevel[$t7] := 123.04908682177032
+- states: rlevel[$t8] := 165.15970674230792
+- states: rlevel[$t9] := 195.13073693138384
+- states: rlevel[$t10] := 211.14413822202854
+
+**Action: [flow($t1) = 2.5039737040552787;, flow($t2) = 9.869260492653762;, flow($t8) = 31.053973536023847;, flow($t10) = 1.4773522402563541;, flow($t7) = 26.950302959373634;, flow($t9) = 4.236366263788531;]
+
+============================
+TIME = 9
+============================
+===
+vaporated
+- derived: vaporated[$t1] := 11.749788982808555
+- derived: vaporated[$t2] := 6.540068335980441
+- derived: vaporated[$t3] := 22.171283120793156
+- derived: vaporated[$t4] := 31.354063376799253
+- derived: vaporated[$t5] := 46.00704774636131
+- derived: vaporated[$t6] := 9.6157937625368
+- derived: vaporated[$t7] := 7.447858604658212
+- derived: vaporated[$t8] := 14.62549628042156
+- derived: vaporated[$t9] := 19.043421862329904
+- derived: vaporated[$t10] := 22.991822890887768
+flow
+- action: flow[$t1] := 2.5039737040552787
+- action: flow[$t2] := 9.869260492653762
+- action: flow[$t3] := 0.0
+- action: flow[$t4] := 0.0
+- action: flow[$t5] := 0.0
+- action: flow[$t6] := 0.0
+- action: flow[$t7] := 26.950302959373634
+- action: flow[$t8] := 31.053973536023847
+- action: flow[$t9] := 4.236366263788531
+- action: flow[$t10] := 1.4773522402563541
+rlevel
+- states: rlevel[$t1] := 153.5976373038859
+- states: rlevel[$t2] := 114.49348378005878
+- states: rlevel[$t3] := 211.36333305302085
+- states: rlevel[$t4] := 251.7447436959676
+- states: rlevel[$t5] := 305.71751994980485
+- states: rlevel[$t6] := 138.9012886836402
+- states: rlevel[$t7] := 122.20005930471505
+- states: rlevel[$t8] := 171.44908865258034
+- states: rlevel[$t9] := 195.7836961639086
+- states: rlevel[$t10] := 215.2689664469176
+
+
+*********************************************************
+>>> ROUND END, reward = -3250.8643876287824
+*********************************************************
+==> Objective value = -3250.864, rewards: [-573.0682367924566, -433.0406134136053, -363.1553998788743, -327.2367447826622, -306.72900480872835, -278.68921909389917, -260.36475130984775, -234.78337535480503, -237.25477948183934, -236.54226271206414]

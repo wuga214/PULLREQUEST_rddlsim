@@ -1,0 +1,409 @@
+
+*********************************************************
+>>> ROUND INIT 1/1; time remaining = 1.7976931348623157E308, horizon = 20
+*********************************************************
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 0
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099985572927355
+distance
+- derived: distance := 7.0710678118654755
+proposedLoc
+- derived: proposedLoc[$x] := -4.495000721353632
+- derived: proposedLoc[$y] := -4.495000721353632
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -5.0
+- states: location[$y] := -5.0
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 1
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099939812911285
+distance
+- derived: distance := 6.356890983015152
+proposedLoc
+- derived: proposedLoc[$x] := -3.990003730708068
+- derived: proposedLoc[$y] := -3.990003730708068
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -4.495000721353632
+- states: location[$y] := -4.495000721353632
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 2
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0099748914003155
+distance
+- derived: distance := 5.642717389886596
+proposedLoc
+- derived: proposedLoc[$x] := -3.4850162850079105
+- derived: proposedLoc[$y] := -3.4850162850079105
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -3.990003730708068
+- states: location[$y] := -3.990003730708068
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 3
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0098952589853685
+distance
+- derived: distance := 4.928557295349287
+proposedLoc
+- derived: proposedLoc[$x] := -2.9800686555152263
+- derived: proposedLoc[$y] := -2.9800686555152263
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -3.4850162850079105
+- states: location[$y] := -3.4850162850079105
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 4
+============================
+===
+scalefactor
+- derived: scalefactor := 1.0095631751633025
+distance
+- derived: distance := 4.214453509432588
+proposedLoc
+- derived: proposedLoc[$x] := -2.475287067933575
+- derived: proposedLoc[$y] := -2.475287067933575
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -2.9800686555152263
+- states: location[$y] := -2.9800686555152263
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 5
+============================
+===
+scalefactor
+- derived: scalefactor := 1.008180024620799
+distance
+- derived: distance := 3.5005845422383945
+proposedLoc
+- derived: proposedLoc[$x] := -1.9711970556231755
+- derived: proposedLoc[$y] := -1.9711970556231755
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -2.475287067933575
+- states: location[$y] := -2.475287067933575
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 6
+============================
+===
+scalefactor
+- derived: scalefactor := 1.002448604387986
+distance
+- derived: distance := 2.787693610172207
+proposedLoc
+- derived: proposedLoc[$x] := -1.4699727534291824
+- derived: proposedLoc[$y] := -1.4699727534291824
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -1.9711970556231755
+- states: location[$y] := -1.9711970556231755
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 7
+============================
+===
+scalefactor
+- derived: scalefactor := 0.9791952339725891
+distance
+- derived: distance := 2.0788554042184715
+proposedLoc
+- derived: proposedLoc[$x] := -0.9803751364428879
+- derived: proposedLoc[$y] := -0.9803751364428879
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -1.4699727534291824
+- states: location[$y] := -1.4699727534291824
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 8
+============================
+===
+scalefactor
+- derived: scalefactor := 0.8923895759499236
+distance
+- derived: distance := 1.3864598141709055
+proposedLoc
+- derived: proposedLoc[$x] := -0.5341803484679261
+- derived: proposedLoc[$y] := -0.5341803484679261
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.9803751364428879
+- states: location[$y] := -0.9803751364428879
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 9
+============================
+===
+scalefactor
+- derived: scalefactor := 0.6483861901240908
+distance
+- derived: distance := 0.755445093556527
+proposedLoc
+- derived: proposedLoc[$x] := -0.20998725340588065
+- derived: proposedLoc[$y] := -0.20998725340588065
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.5341803484679261
+- states: location[$y] := -0.5341803484679261
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 10
+============================
+===
+scalefactor
+- derived: scalefactor := 0.2985343925465107
+distance
+- derived: distance := 0.29696682169207234
+proposedLoc
+- derived: proposedLoc[$x] := -0.060720057132625294
+- derived: proposedLoc[$y] := -0.060720057132625294
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.20998725340588065
+- states: location[$y] := -0.20998725340588065
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 11
+============================
+===
+scalefactor
+- derived: scalefactor := 0.09566068204378397
+distance
+- derived: distance := 0.08587112830502787
+proposedLoc
+- derived: proposedLoc[$x] := -0.012889716110733307
+- derived: proposedLoc[$y] := -0.012889716110733307
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.060720057132625294
+- states: location[$y] := -0.060720057132625294
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 12
+============================
+===
+scalefactor
+- derived: scalefactor := 0.028226792526019562
+distance
+- derived: distance := 0.018228811338938024
+proposedLoc
+- derived: proposedLoc[$x] := 0.001223680152276474
+- derived: proposedLoc[$y] := 0.001223680152276474
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := -0.012889716110733307
+- states: location[$y] := -0.012889716110733307
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 13
+============================
+===
+scalefactor
+- derived: scalefactor := 0.01173054333982071
+distance
+- derived: distance := 0.0017305450673561636
+proposedLoc
+- derived: proposedLoc[$x] := 0.007088951822186829
+- derived: proposedLoc[$y] := 0.007088951822186829
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.001223680152276474
+- states: location[$y] := 0.001223680152276474
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 14
+============================
+===
+scalefactor
+- derived: scalefactor := 0.020024955954531798
+distance
+- derived: distance := 0.010025291809946078
+proposedLoc
+- derived: proposedLoc[$x] := 0.017101429799452728
+- derived: proposedLoc[$y] := 0.017101429799452728
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.007088951822186829
+- states: location[$y] := 0.007088951822186829
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 15
+============================
+===
+scalefactor
+- derived: scalefactor := 0.0341803596345811
+distance
+- derived: distance := 0.024185073958357447
+proposedLoc
+- derived: proposedLoc[$x] := 0.03419160961674328
+- derived: proposedLoc[$y] := 0.03419160961674328
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.017101429799452728
+- states: location[$y] := 0.017101429799452728
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 16
+============================
+===
+scalefactor
+- derived: scalefactor := 0.05831658704965115
+distance
+- derived: distance := 0.048354238039364686
+proposedLoc
+- derived: proposedLoc[$x] := 0.06334990314156885
+- derived: proposedLoc[$y] := 0.06334990314156885
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.03419160961674328
+- states: location[$y] := 0.03419160961674328
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 17
+============================
+===
+scalefactor
+- derived: scalefactor := 0.09935136281626877
+distance
+- derived: distance := 0.08959029219782862
+proposedLoc
+- derived: proposedLoc[$x] := 0.11302558454970324
+- derived: proposedLoc[$y] := 0.11302558454970324
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.06334990314156885
+- states: location[$y] := 0.06334990314156885
+
+**Action: [move($x) = 0.5;, move($y) = 0.5;]
+
+============================
+TIME = 18
+============================
+===
+scalefactor
+- derived: scalefactor := 0.16849478385812033
+distance
+- derived: distance := 0.15984231456533726
+proposedLoc
+- derived: proposedLoc[$x] := 0.1972729764787634
+- derived: proposedLoc[$y] := 0.1972729764787634
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.11302558454970324
+- states: location[$y] := 0.11302558454970324
+
+**Action: [move($y) = 0.5;, move($x) = 0.5;]
+
+============================
+TIME = 19
+============================
+===
+scalefactor
+- derived: scalefactor := 0.2819664510119366
+distance
+- derived: distance := 0.2789861188259758
+proposedLoc
+- derived: proposedLoc[$x] := 0.3382562019847317
+- derived: proposedLoc[$y] := 0.3382562019847317
+move
+- action: move[$x] := 0.5
+- action: move[$y] := 0.5
+location
+- states: location[$x] := 0.1972729764787634
+- states: location[$y] := 0.1972729764787634
+
+
+*********************************************************
+>>> ROUND END, reward = -174.46288929114027
+*********************************************************
+==> Objective value = -174.463, rewards: [-16.0, -14.990001442707264, -13.980007461416136, -12.970032570015821, -11.960137311030453, -10.95057413586715, -9.942394111246351, -8.939945506858365, -7.960750272885775, -7.068360696935852, -6.419974506811761, -6.12144011426525, -6.025779432221467, -5.9975526396954475, -5.985822096355626, -5.9657971404010945, -5.931616780766514, -5.8733001937168625, -5.7739488309005935, -5.605454047042473]

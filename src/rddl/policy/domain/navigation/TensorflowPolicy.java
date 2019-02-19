@@ -24,6 +24,7 @@ import rddl.policy.Policy;
 import util.Permutation;
 
 public class TensorflowPolicy extends Policy{
+	public int Horizon = 20;
 	public int MAX_CONCURRENT_ACTIONS = 20;
 	public String Python_Repo = "/media/wuga/Storage/JAIR-18/";
 	public TensorflowPolicy () { 
@@ -69,6 +70,7 @@ public class TensorflowPolicy extends Policy{
 				actions.add(new PVAR_INST_DEF(p._sPVarName, action_values[i], terms));
 			}
 		}
+		Horizon = Horizon - 1;
 		return actions;
 	}
 	
@@ -80,7 +82,11 @@ public class TensorflowPolicy extends Policy{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		long start = System.currentTimeMillis();
 		runPythonCommand();
+		long end = System.currentTimeMillis();
+
+		System.out.println("Took : " + ((end - start) / 1000.0));
 		
 		try (BufferedReader reader = new BufferedReader(
 				new FileReader(inFile))) {
@@ -107,35 +113,52 @@ public class TensorflowPolicy extends Policy{
 		try {
 //			10x10
 //			String command = String.format(
-//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
+//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
 //					Python_Repo + "plan.py",
 //					Python_Repo + "weights/nav/10x10",
 //					"2",
 //					"Navigation",
 //					"Navigation10",
-//					"10",
+//					Horizon,
+//					"2",
+//					"2",
+//					"300",
+//					"-1",
+//					"1",
+//					Python_Repo + "temp/state",
+//					Python_Repo + "temp/action");
+			
+			String command = String.format(
+			"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s -e %s --constraint %s %s --get_state %s --send_action %s",
+			Python_Repo + "plan.py",
+			Python_Repo + "weights/nav/10x10",
+			"2",
+			"Navigation",
+			"Navigation10",
+			Horizon,
+			"2",
+			"2",
+			"400",
+			"-0.5",
+			"0.5",
+			Python_Repo + "temp/state",
+			Python_Repo + "temp/action");
+			
+//			8x8
+//			String command = String.format(
+//					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
+//					Python_Repo + "plan.py",
+//					Python_Repo + "weights/nav/8x8",
+//					"2",
+//					"Navigation",
+//					"Navigation8",
+//					Horizon,
 //					"2",
 //					"2",
 //					"-1",
 //					"1",
 //					Python_Repo + "temp/state",
 //					Python_Repo + "temp/action");
-			
-//			8x8
-			String command = String.format(
-					"python %s -w %s -l %s -d %s -i %s -hz %s -a %s -s %s --constraint %s %s --get_state %s --send_action %s",
-					Python_Repo + "plan.py",
-					Python_Repo + "weights/nav/8x8",
-					"2",
-					"Navigation",
-					"Navigation8",
-					"10",
-					"2",
-					"2",
-					"-1",
-					"1",
-					Python_Repo + "temp/state",
-					Python_Repo + "temp/action");
 				
 			System.out.println(command);
 
